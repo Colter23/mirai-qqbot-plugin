@@ -1,0 +1,475 @@
+[0m2021-03-06 15:20:31 V/Net 1537133819: Loading BdhSession from cache file[0m
+[0m2021-03-06 15:20:31 V/Net 1537133819: Loading server list from cache.[0m
+[92m2021-03-06 15:20:31 I/Net 1537133819: Connected to server 36.155.229.198:80[0m
+[0m2021-03-06 15:20:31 V/Net 1537133819: Send: wtlogin.login[0m
+[0m2021-03-06 15:20:32 V/Net 1537133819: Recv: LoginPacketResponse.Success[0m
+[92m2021-03-06 15:20:32 I/Net 1537133819: Login successful[0m
+[0m2021-03-06 15:20:32 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-03-06 15:20:32 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[92m2021-03-06 15:20:32 I/Net 1537133819: Scheduled key refresh in 5h 55min 0.0s.[0m
+[0m2021-03-06 15:20:32 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-03-06 15:20:32 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[92m2021-03-06 15:20:32 I/Net 1537133819: Awaiting ConfigPushSvc.PushReq.[0m
+[92m2021-03-06 15:20:32 I/Net 1537133819: Syncing friend message history...[0m
+[92m2021-03-06 15:20:32 I/Net 1537133819: Start loading friend list...[0m
+[92m2021-03-06 15:20:32 I/Net 1537133819: Start loading stranger list...[0m
+[0m2021-03-06 15:20:32 V/Net 1537133819: Send: StatSvc.GetDevLoginInfo[0m
+[0m2021-03-06 15:20:32 V/Net 1537133819: Send: MessageSvc.PbGetMsg[0m
+[0m2021-03-06 15:20:32 V/Net 1537133819: Send: OidbSvc.0x496[0m
+[0m2021-03-06 15:20:32 V/Net 1537133819: Send: friendlist.getFriendGroupList[0m
+[0m2021-03-06 15:20:32 V/Net 1537133819: Send: OidbSvc.0x5d2_0[0m
+[0m2021-03-06 15:20:32 V/Net 1537133819: Recv: StrangerList.GetStrangerList.Response(result=0)[0m
+[92m2021-03-06 15:20:32 I/Net 1537133819: Successfully loaded stranger list: 0 in total[0m
+[0m2021-03-06 15:20:32 V/Net 1537133819: Recv: StatSvc.GetDevLoginInfo.Response(deviceList.size=1)[0m
+[92m2021-03-06 15:20:32 I/Net 1537133819: Syncing friend message history: Success.[0m
+[0m2021-03-06 15:20:32 V/Net 1537133819: Recv: TroopManagement.GetTroopConfig.Response(true)[0m
+[92m2021-03-06 15:20:32 I/Net 1537133819: Start loading group list...[0m
+[0m2021-03-06 15:20:32 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-03-06 15:20:32 V/Net 1537133819: Loading friend list: 3/3[0m
+[92m2021-03-06 15:20:32 I/Net 1537133819: Successfully loaded friend list: 3 in total[0m
+[0m2021-03-06 15:20:32 V/Net 1537133819: Send: friendlist.GetTroopListReqV2[0m
+[0m2021-03-06 15:20:32 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-03-06 15:20:32 V/Net 1537133819: Send: friendlist.GetTroopMemberListReq[0m
+[0m2021-03-06 15:20:33 V/Net 1537133819: Recv: FriendList.GetTroopMemberList.Response[0m
+[92m2021-03-06 15:20:33 I/Net 1537133819: Successfully loaded group list: 1 in total.[0m
+[0m2021-03-06 15:20:35 V/Net 1537133819: Recv: ConfigPushSvc.PushReq.PushReqResponse.ServerListPush[0m
+[92m2021-03-06 15:20:35 I/Net 1537133819: Server list updated.[0m
+[0m2021-03-06 15:20:35 V/Net 1537133819: Saving bdh session to cache[0m
+[0m2021-03-06 15:20:35 V/Net 1537133819: Saving server list to cache[0m
+[0m2021-03-06 15:20:35 V/Net 1537133819: Send: ConfigPushSvc.PushResp[0m
+[92m2021-03-06 15:20:35 I/Net 1537133819: ConfigPushSvc.PushReq: Server updated.[0m
+[96m2021-03-06 15:20:35 D/Net 1537133819: Received unknown commandName: ConfigPushSvc.PushDomain[0m
+[0m2021-03-06 15:20:35 V/Net 1537133819: Recv: ConfigPushSvc.PushReq.PushReqResponse.ConfigPush[0m
+[0m2021-03-06 15:20:35 V/Net 1537133819: Saving bdh session to cache[0m
+[0m2021-03-06 15:20:35 V/Net 1537133819: Send: ConfigPushSvc.PushResp[0m
+[0m2021-03-06 15:20:58 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-06 15:20:58 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m
+[0m2021-03-06 15:21:02 V/Net 1537133819: Send: OnlinePush.RespPush[0m
+[0m2021-03-06 15:22:40 V/Net 1537133819: Loading BdhSession from cache file[0m
+[0m2021-03-06 15:22:40 V/Net 1537133819: Loading server list from cache.[0m
+[92m2021-03-06 15:22:40 I/Net 1537133819: Connected to server 120.241.139.239:80[0m
+[0m2021-03-06 15:22:40 V/Net 1537133819: Send: wtlogin.login[0m
+[0m2021-03-06 15:22:40 V/Net 1537133819: Recv: LoginPacketResponse.Success[0m
+[92m2021-03-06 15:22:40 I/Net 1537133819: Login successful[0m
+[0m2021-03-06 15:22:40 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-03-06 15:22:41 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[92m2021-03-06 15:22:41 I/Net 1537133819: Scheduled key refresh in 5h 55min 0.0s.[0m
+[0m2021-03-06 15:22:41 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-03-06 15:22:41 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[92m2021-03-06 15:22:41 I/Net 1537133819: Awaiting ConfigPushSvc.PushReq.[0m
+[92m2021-03-06 15:22:41 I/Net 1537133819: Syncing friend message history...[0m
+[92m2021-03-06 15:22:41 I/Net 1537133819: Start loading stranger list...[0m
+[92m2021-03-06 15:22:41 I/Net 1537133819: Start loading friend list...[0m
+[0m2021-03-06 15:22:41 V/Net 1537133819: Send: MessageSvc.PbGetMsg[0m
+[0m2021-03-06 15:22:41 V/Net 1537133819: Send: StatSvc.GetDevLoginInfo[0m
+[0m2021-03-06 15:22:41 V/Net 1537133819: Send: OidbSvc.0x496[0m
+[0m2021-03-06 15:22:41 V/Net 1537133819: Send: OidbSvc.0x5d2_0[0m
+[0m2021-03-06 15:22:41 V/Net 1537133819: Send: friendlist.getFriendGroupList[0m
+[92m2021-03-06 15:22:41 I/Net 1537133819: Syncing friend message history: Success.[0m
+[0m2021-03-06 15:22:41 V/Net 1537133819: Recv: StrangerList.GetStrangerList.Response(result=0)[0m
+[92m2021-03-06 15:22:41 I/Net 1537133819: Successfully loaded stranger list: 0 in total[0m
+[0m2021-03-06 15:22:41 V/Net 1537133819: Recv: StatSvc.GetDevLoginInfo.Response(deviceList.size=1)[0m
+[0m2021-03-06 15:22:41 V/Net 1537133819: Recv: TroopManagement.GetTroopConfig.Response(true)[0m
+[92m2021-03-06 15:22:41 I/Net 1537133819: Start loading group list...[0m
+[0m2021-03-06 15:22:41 V/Net 1537133819: Send: friendlist.GetTroopListReqV2[0m
+[0m2021-03-06 15:22:41 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-03-06 15:22:41 V/Net 1537133819: Loading friend list: 3/3[0m
+[92m2021-03-06 15:22:41 I/Net 1537133819: Successfully loaded friend list: 3 in total[0m
+[0m2021-03-06 15:22:41 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-03-06 15:22:41 V/Net 1537133819: Send: friendlist.GetTroopMemberListReq[0m
+[0m2021-03-06 15:22:41 V/Net 1537133819: Recv: FriendList.GetTroopMemberList.Response[0m
+[92m2021-03-06 15:22:41 I/Net 1537133819: Successfully loaded group list: 1 in total.[0m
+[0m2021-03-06 15:22:44 V/Net 1537133819: Recv: ConfigPushSvc.PushReq.PushReqResponse.ServerListPush[0m
+[92m2021-03-06 15:22:44 I/Net 1537133819: Server list updated.[0m
+[0m2021-03-06 15:22:44 V/Net 1537133819: Saving bdh session to cache[0m
+[0m2021-03-06 15:22:44 V/Net 1537133819: Saving server list to cache[0m
+[0m2021-03-06 15:22:44 V/Net 1537133819: Send: ConfigPushSvc.PushResp[0m
+[92m2021-03-06 15:22:44 I/Net 1537133819: ConfigPushSvc.PushReq: Server updated.[0m
+[96m2021-03-06 15:22:44 D/Net 1537133819: Received unknown commandName: ConfigPushSvc.PushDomain[0m
+[0m2021-03-06 15:22:44 V/Net 1537133819: Recv: ConfigPushSvc.PushReq.PushReqResponse.ConfigPush[0m
+[0m2021-03-06 15:22:44 V/Net 1537133819: Saving bdh session to cache[0m
+[0m2021-03-06 15:22:44 V/Net 1537133819: Send: ConfigPushSvc.PushResp[0m
+[0m2021-03-06 15:25:01 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-06 15:25:01 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m
+[0m2021-03-06 15:27:01 V/Net 1537133819: Loading BdhSession from cache file[0m
+[0m2021-03-06 15:27:01 V/Net 1537133819: Loading server list from cache.[0m
+[92m2021-03-06 15:27:01 I/Net 1537133819: Connected to server 112.60.13.157:80[0m
+[0m2021-03-06 15:27:01 V/Net 1537133819: Send: wtlogin.login[0m
+[0m2021-03-06 15:27:01 V/Net 1537133819: Recv: LoginPacketResponse.Success[0m
+[92m2021-03-06 15:27:01 I/Net 1537133819: Login successful[0m
+[0m2021-03-06 15:27:01 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-03-06 15:27:02 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[92m2021-03-06 15:27:02 I/Net 1537133819: Scheduled key refresh in 5h 55min 0.0s.[0m
+[0m2021-03-06 15:27:02 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-03-06 15:27:02 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[92m2021-03-06 15:27:02 I/Net 1537133819: Awaiting ConfigPushSvc.PushReq.[0m
+[92m2021-03-06 15:27:02 I/Net 1537133819: Syncing friend message history...[0m
+[92m2021-03-06 15:27:02 I/Net 1537133819: Start loading stranger list...[0m
+[92m2021-03-06 15:27:02 I/Net 1537133819: Start loading friend list...[0m
+[0m2021-03-06 15:27:02 V/Net 1537133819: Send: MessageSvc.PbGetMsg[0m
+[0m2021-03-06 15:27:02 V/Net 1537133819: Send: OidbSvc.0x496[0m
+[0m2021-03-06 15:27:02 V/Net 1537133819: Send: StatSvc.GetDevLoginInfo[0m
+[0m2021-03-06 15:27:02 V/Net 1537133819: Send: OidbSvc.0x5d2_0[0m
+[0m2021-03-06 15:27:02 V/Net 1537133819: Send: friendlist.getFriendGroupList[0m
+[92m2021-03-06 15:27:02 I/Net 1537133819: Syncing friend message history: Success.[0m
+[0m2021-03-06 15:27:02 V/Net 1537133819: Recv: StrangerList.GetStrangerList.Response(result=0)[0m
+[92m2021-03-06 15:27:02 I/Net 1537133819: Successfully loaded stranger list: 0 in total[0m
+[0m2021-03-06 15:27:02 V/Net 1537133819: Recv: StatSvc.GetDevLoginInfo.Response(deviceList.size=1)[0m
+[0m2021-03-06 15:27:02 V/Net 1537133819: Recv: TroopManagement.GetTroopConfig.Response(true)[0m
+[92m2021-03-06 15:27:02 I/Net 1537133819: Start loading group list...[0m
+[0m2021-03-06 15:27:02 V/Net 1537133819: Send: friendlist.GetTroopListReqV2[0m
+[0m2021-03-06 15:27:02 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-03-06 15:27:02 V/Net 1537133819: Loading friend list: 3/3[0m
+[92m2021-03-06 15:27:02 I/Net 1537133819: Successfully loaded friend list: 3 in total[0m
+[0m2021-03-06 15:27:02 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-03-06 15:27:02 V/Net 1537133819: Send: friendlist.GetTroopMemberListReq[0m
+[0m2021-03-06 15:27:02 V/Net 1537133819: Recv: FriendList.GetTroopMemberList.Response[0m
+[92m2021-03-06 15:27:02 I/Net 1537133819: Successfully loaded group list: 1 in total.[0m
+[96m2021-03-06 15:27:05 D/Net 1537133819: Received unknown commandName: ConfigPushSvc.PushDomain[0m
+[0m2021-03-06 15:27:05 V/Net 1537133819: Recv: ConfigPushSvc.PushReq.PushReqResponse.ConfigPush[0m
+[0m2021-03-06 15:27:05 V/Net 1537133819: Saving bdh session to cache[0m
+[0m2021-03-06 15:27:05 V/Net 1537133819: Send: ConfigPushSvc.PushResp[0m
+[92m2021-03-06 15:27:05 I/Net 1537133819: ConfigPushSvc.PushReq: Config updated.[0m
+[0m2021-03-06 15:29:35 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 15:29:35 V/Net 1537133819: Recv: RequireUpload(fileId=2687405132, uKey=[-64, -86, -116, 7, 77, -64, -80, -55, 22, -104, -86, -89, -3, -60, 84, 114, -90, 85, 37, -76, 55, 96, 43, -73, -108, 0, -75, -40, -65, -98, -43, -112, 81, 15, 104, -100, -98, 74, -46, -33, 37, -17, 29, 53, -69, 81, 0, -23, -52, -19, -43, -69, -93, -107, 124, -120, -114, 20, -40, -90, 12, 108, -76, 47, -11, -79, 10, 17, -93, 32, 51, 48, -100, -63, -44, 73, -111, 70, -115, -36, -101, 4, -32, -101, 51, -49, -124, 118, 62, 46, -96, -1, -120, 26, -50, 126, -41, 48, 35, -73, 31, 74, 99, 92, -124, -111, 101, 114, 34, -16, 0, -12, -46, -105, 81, -58, -111, -53, -28, 31, -114, -67, -4, -63, 21, -109, -93, 124])[0m
+[0m2021-03-06 15:29:35 V/Net 1537133819: [Highway] Uploading group image to 111.30.171.169:443, size=73.28 KiB[0m
+[0m2021-03-06 15:29:36 V/Net 1537133819: [Highway] Uploading group image: succeed at 144 KiB/s[0m
+[0m2021-03-06 15:29:36 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 15:29:36 V/Net 1537133819: Recv: RequireUpload(fileId=3142701649, uKey=[-1, 94, -127, 87, 92, -92, 6, -36, -36, -60, 121, 97, -79, -127, 114, 70, -75, -116, 53, -1, -85, -111, 32, -55, -117, 95, -23, 87, 61, 22, -108, -52, -97, -128, -6, 47, -29, -101, 92, -27, 27, 39, -3, 2, -28, -26, -37, -40, 102, 123, -13, -10, 98, 40, -46, -3, 78, -1, -74, -76, -95, 95, -44, -59, -79, -110, -124, -114, -100, -39, -91, 64, -35, -65, -71, -20, -48, 50, -93, -88, -48, 101, -3, -121, 3, -25, -117, -54, 61, 109, 117, -95, 18, 53, 49, -1, -107, -73, 43, 64, 79, 111, 25, 32, -58, -123, 88, -89, -5, -97, 10, 69, 35, 113, -44, 63, 119, 21, 105, 24, 29, -127, 40, 101, 38, -15, 42, -81])[0m
+[0m2021-03-06 15:29:36 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-06 15:29:36 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m
+[0m2021-03-06 15:33:08 V/Net 1537133819: Loading BdhSession from cache file[0m
+[0m2021-03-06 15:33:08 V/Net 1537133819: Loading server list from cache.[0m
+[92m2021-03-06 15:33:09 I/Net 1537133819: Connected to server 112.60.13.157:80[0m
+[0m2021-03-06 15:33:09 V/Net 1537133819: Send: wtlogin.login[0m
+[0m2021-03-06 15:33:09 V/Net 1537133819: Recv: LoginPacketResponse.Success[0m
+[92m2021-03-06 15:33:09 I/Net 1537133819: Login successful[0m
+[0m2021-03-06 15:33:09 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-03-06 15:33:09 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[92m2021-03-06 15:33:09 I/Net 1537133819: Scheduled key refresh in 5h 55min 0.0s.[0m
+[0m2021-03-06 15:33:09 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-03-06 15:33:09 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[92m2021-03-06 15:33:09 I/Net 1537133819: Awaiting ConfigPushSvc.PushReq.[0m
+[92m2021-03-06 15:33:09 I/Net 1537133819: Syncing friend message history...[0m
+[92m2021-03-06 15:33:09 I/Net 1537133819: Start loading friend list...[0m
+[92m2021-03-06 15:33:09 I/Net 1537133819: Start loading stranger list...[0m
+[0m2021-03-06 15:33:09 V/Net 1537133819: Send: StatSvc.GetDevLoginInfo[0m
+[0m2021-03-06 15:33:09 V/Net 1537133819: Send: MessageSvc.PbGetMsg[0m
+[0m2021-03-06 15:33:09 V/Net 1537133819: Send: OidbSvc.0x496[0m
+[0m2021-03-06 15:33:09 V/Net 1537133819: Send: OidbSvc.0x5d2_0[0m
+[0m2021-03-06 15:33:09 V/Net 1537133819: Send: friendlist.getFriendGroupList[0m
+[0m2021-03-06 15:33:09 V/Net 1537133819: Recv: StrangerList.GetStrangerList.Response(result=0)[0m
+[92m2021-03-06 15:33:09 I/Net 1537133819: Successfully loaded stranger list: 0 in total[0m
+[0m2021-03-06 15:33:09 V/Net 1537133819: Recv: StatSvc.GetDevLoginInfo.Response(deviceList.size=1)[0m
+[92m2021-03-06 15:33:09 I/Net 1537133819: Syncing friend message history: Success.[0m
+[0m2021-03-06 15:33:09 V/Net 1537133819: Recv: TroopManagement.GetTroopConfig.Response(true)[0m
+[92m2021-03-06 15:33:09 I/Net 1537133819: Start loading group list...[0m
+[0m2021-03-06 15:33:09 V/Net 1537133819: Send: friendlist.GetTroopListReqV2[0m
+[0m2021-03-06 15:33:09 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-03-06 15:33:09 V/Net 1537133819: Loading friend list: 3/3[0m
+[92m2021-03-06 15:33:09 I/Net 1537133819: Successfully loaded friend list: 3 in total[0m
+[0m2021-03-06 15:33:09 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-03-06 15:33:09 V/Net 1537133819: Send: friendlist.GetTroopMemberListReq[0m
+[0m2021-03-06 15:33:09 V/Net 1537133819: Recv: FriendList.GetTroopMemberList.Response[0m
+[92m2021-03-06 15:33:10 I/Net 1537133819: Successfully loaded group list: 1 in total.[0m
+[96m2021-03-06 15:33:12 D/Net 1537133819: Received unknown commandName: ConfigPushSvc.PushDomain[0m
+[0m2021-03-06 15:33:12 V/Net 1537133819: Recv: ConfigPushSvc.PushReq.PushReqResponse.ConfigPush[0m
+[0m2021-03-06 15:33:12 V/Net 1537133819: Saving bdh session to cache[0m
+[0m2021-03-06 15:33:12 V/Net 1537133819: Send: ConfigPushSvc.PushResp[0m
+[92m2021-03-06 15:33:12 I/Net 1537133819: ConfigPushSvc.PushReq: Config updated.[0m
+[0m2021-03-06 15:35:33 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 15:35:34 V/Net 1537133819: Recv: RequireUpload(fileId=3205144999, uKey=[-95, -44, 9, -98, 35, 63, 23, -105, -106, -10, 121, 49, 37, -53, 55, 67, 76, -120, 37, 38, -88, -60, -101, -27, -13, -122, -29, -100, -109, -114, -27, -126, -67, -11, -107, 50, -15, 99, -114, 102, -51, -106, 55, 101, 11, -98, -85, 89, 14, 39, 37, 58, -105, 122, 101, -121, 125, 92, -90, -66, 84, -119, 111, -7, 65, -66, -42, 37, -106, -34, 3, -90, -5, -13, -36, -116, -70, 97, 108, -72, -81, 65, 70, -106, -13, 23, -65, 47, -28, -25, -78, 116, -59, 100, 9, -39, -23, 22, 59, -79, 49, 120, 55, -84, -13, 58, -67, 115, -84, -67, 68, -84, -117, 19, -26, -4, 34, 41, -51, 104, 45, -53, -11, 123, 56, 123, 79, 24])[0m
+[0m2021-03-06 15:35:34 V/Net 1537133819: [Highway] Uploading group image to 111.30.159.160:443, size=73.21 KiB[0m
+[0m2021-03-06 15:35:34 V/Net 1537133819: [Highway] Uploading group image: succeed at 164 KiB/s[0m
+[0m2021-03-06 15:35:34 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 15:35:34 V/Net 1537133819: Recv: RequireUpload(fileId=2647359197, uKey=[93, 67, -67, -35, 42, 36, 52, -25, 3, 54, -67, -87, 37, -57, -16, -9, 46, -106, 92, 126, -59, 121, -73, 20, 124, 107, 65, 36, 36, 15, 38, -102, -96, -80, 116, 92, -99, -7, 42, -74, 20, -21, 58, 3, -57, 24, 22, -15, -24, -86, 114, 79, 86, 42, 100, -109, -92, 43, -52, 105, 49, 66, 80, -108, 76, -75, 96, 105, -49, 50, 19, -120, -27, 93, -30, -82, -104, -53, 25, -45, 38, -79, 103, 64, 95, 9, -94, 79, 99, 11, -51, -42, 36, -114, -57, -42, -87, -110, 66, 115, 116, 121, -47, 69, 111, 9, 59, 118, -67, 57, 47, -64, 70, 23, -75, -79, 106, -101, -10, -24, 23, 61, 29, 24, -37, 102, -25, -110])[0m
+[0m2021-03-06 15:35:34 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-06 15:35:34 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m
+[0m2021-03-06 15:40:41 V/Net 1537133819: Loading BdhSession from cache file[0m
+[0m2021-03-06 15:40:41 V/Net 1537133819: Loading server list from cache.[0m
+[92m2021-03-06 15:40:41 I/Net 1537133819: Connected to server 112.60.13.157:80[0m
+[0m2021-03-06 15:40:41 V/Net 1537133819: Send: wtlogin.login[0m
+[0m2021-03-06 15:40:41 V/Net 1537133819: Recv: LoginPacketResponse.Success[0m
+[92m2021-03-06 15:40:41 I/Net 1537133819: Login successful[0m
+[0m2021-03-06 15:40:41 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-03-06 15:40:41 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[92m2021-03-06 15:40:41 I/Net 1537133819: Scheduled key refresh in 5h 55min 0.0s.[0m
+[0m2021-03-06 15:40:41 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-03-06 15:40:42 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[92m2021-03-06 15:40:42 I/Net 1537133819: Awaiting ConfigPushSvc.PushReq.[0m
+[92m2021-03-06 15:40:42 I/Net 1537133819: Syncing friend message history...[0m
+[92m2021-03-06 15:40:42 I/Net 1537133819: Start loading stranger list...[0m
+[92m2021-03-06 15:40:42 I/Net 1537133819: Start loading friend list...[0m
+[0m2021-03-06 15:40:42 V/Net 1537133819: Send: StatSvc.GetDevLoginInfo[0m
+[0m2021-03-06 15:40:42 V/Net 1537133819: Send: MessageSvc.PbGetMsg[0m
+[0m2021-03-06 15:40:42 V/Net 1537133819: Send: OidbSvc.0x496[0m
+[0m2021-03-06 15:40:42 V/Net 1537133819: Send: OidbSvc.0x5d2_0[0m
+[0m2021-03-06 15:40:42 V/Net 1537133819: Send: friendlist.getFriendGroupList[0m
+[92m2021-03-06 15:40:42 I/Net 1537133819: Syncing friend message history: Success.[0m
+[0m2021-03-06 15:40:42 V/Net 1537133819: Recv: StrangerList.GetStrangerList.Response(result=0)[0m
+[92m2021-03-06 15:40:42 I/Net 1537133819: Successfully loaded stranger list: 0 in total[0m
+[0m2021-03-06 15:40:42 V/Net 1537133819: Recv: StatSvc.GetDevLoginInfo.Response(deviceList.size=1)[0m
+[0m2021-03-06 15:40:42 V/Net 1537133819: Recv: TroopManagement.GetTroopConfig.Response(true)[0m
+[92m2021-03-06 15:40:42 I/Net 1537133819: Start loading group list...[0m
+[0m2021-03-06 15:40:42 V/Net 1537133819: Send: friendlist.GetTroopListReqV2[0m
+[0m2021-03-06 15:40:42 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-03-06 15:40:42 V/Net 1537133819: Loading friend list: 3/3[0m
+[92m2021-03-06 15:40:42 I/Net 1537133819: Successfully loaded friend list: 3 in total[0m
+[0m2021-03-06 15:40:42 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-03-06 15:40:42 V/Net 1537133819: Send: friendlist.GetTroopMemberListReq[0m
+[0m2021-03-06 15:40:42 V/Net 1537133819: Recv: FriendList.GetTroopMemberList.Response[0m
+[92m2021-03-06 15:40:42 I/Net 1537133819: Successfully loaded group list: 1 in total.[0m
+[96m2021-03-06 15:40:44 D/Net 1537133819: Received unknown commandName: ConfigPushSvc.PushDomain[0m
+[0m2021-03-06 15:40:44 V/Net 1537133819: Recv: ConfigPushSvc.PushReq.PushReqResponse.ConfigPush[0m
+[0m2021-03-06 15:40:44 V/Net 1537133819: Saving bdh session to cache[0m
+[0m2021-03-06 15:40:44 V/Net 1537133819: Send: ConfigPushSvc.PushResp[0m
+[92m2021-03-06 15:40:44 I/Net 1537133819: ConfigPushSvc.PushReq: Config updated.[0m
+[0m2021-03-06 15:46:46 V/Net 1537133819: Send: Heartbeat.Alive[0m
+[0m2021-03-06 15:47:24 V/Net 1537133819: Channel closed.[0m
+[0m2021-03-06 15:47:24 V/Net 1537133819: Loading BdhSession from cache file[0m
+[92m2021-03-06 15:47:24 I/Net 1537133819: Connected to server 36.155.249.100:14000[0m
+[0m2021-03-06 15:47:24 V/Net 1537133819: Send: wtlogin.login[0m
+[0m2021-03-06 15:47:25 V/Net 1537133819: Recv: LoginPacketResponse.Success[0m
+[92m2021-03-06 15:47:25 I/Net 1537133819: Login successful[0m
+[0m2021-03-06 15:47:25 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-03-06 15:47:25 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[92m2021-03-06 15:47:25 I/Net 1537133819: Scheduled key refresh in 5h 55min 0.0s.[0m
+[92m2021-03-06 15:47:25 I/Net 1537133819: Syncing friend message history...[0m
+[0m2021-03-06 15:47:25 V/Net 1537133819: Send: MessageSvc.PbGetMsg[0m
+[92m2021-03-06 15:47:25 I/Net 1537133819: Syncing friend message history: Success.[0m
+[0m2021-03-06 15:47:28 V/Net 1537133819: Recv: ConfigPushSvc.PushReq.PushReqResponse.ServerListPush[0m
+[92m2021-03-06 15:47:28 I/Net 1537133819: Server list updated.[0m
+[0m2021-03-06 15:47:28 V/Net 1537133819: Saving bdh session to cache[0m
+[0m2021-03-06 15:47:28 V/Net 1537133819: Saving server list to cache[0m
+[0m2021-03-06 15:47:28 V/Net 1537133819: Send: ConfigPushSvc.PushResp[0m
+[96m2021-03-06 15:47:28 D/Net 1537133819: Received unknown commandName: ConfigPushSvc.PushDomain[0m
+[0m2021-03-06 15:47:28 V/Net 1537133819: Recv: ConfigPushSvc.PushReq.PushReqResponse.ConfigPush[0m
+[0m2021-03-06 15:47:28 V/Net 1537133819: Saving bdh session to cache[0m
+[0m2021-03-06 15:47:28 V/Net 1537133819: Send: ConfigPushSvc.PushResp[0m
+[0m2021-03-06 15:47:32 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 15:47:32 V/Net 1537133819: Recv: RequireUpload(fileId=3160511988, uKey=[41, 6, -49, -83, -104, -79, -74, -75, 74, 14, 48, 92, -128, -115, 107, 81, -3, -123, -31, 54, 73, 119, 6, -75, 71, 52, -67, 40, 74, 113, 96, -120, 121, 19, -38, -63, 124, -32, 27, 40, -82, 21, -60, -78, -5, -114, 108, -6, -99, 30, -43, 54, -29, -76, 36, 66, 120, -32, -125, 87, 40, 1, -109, -95, -20, -20, -107, 17, -13, -105, -127, 57, 103, 87, -20, -28, -92, -89, -51, -50, -128, 92, 42, 55, -71, 62, -74, -90, 100, -17, 20, 66, 99, -42, -66, 22, -122, -112, -63, -27, 57, 18, -22, 97, 82, -109, 99, -117, -115, 76, -95, 79, 118, -37, -26, 124, -113, -38, 33, 25, -63, 101, 89, 126, -88, -59, -44, -77])[0m
+[0m2021-03-06 15:47:32 V/Net 1537133819: [Highway] Uploading group image to 111.30.171.186:443, size=72.57 KiB[0m
+[0m2021-03-06 15:47:32 V/Net 1537133819: [Highway] Uploading group image: succeed at 130 KiB/s[0m
+[0m2021-03-06 15:47:34 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 15:47:35 V/Net 1537133819: Recv: RequireUpload(fileId=2397701406, uKey=[30, 0, -91, 104, -116, -35, 21, 20, 11, 32, 20, 127, 6, -101, 88, -38, -117, -20, -118, 24, 37, -36, -98, 9, -120, 12, 33, -120, -35, 85, -49, -125, 26, 88, 74, -101, -125, 30, 80, 21, -85, -4, -27, -83, 66, 98, -42, 12, 80, 37, 67, -32, -36, 107, -30, -35, 75, 117, -44, 109, 76, -114, -116, -38, -116, 112, 82, -49, -19, 6, 31, -41, -10, -119, 43, -41, -117, 23, -109, -14, -59, -111, 120, 18, 87, 89, -93, 126, -98, -10, 36, -81, 40, -109, -40, -125, 30, -110, 32, -30, 44, -71, 20, 79, -9, 75, 5, -70, 63, 21, 111, -34, -10, -48, 26, 83, 120, 30, 111, 51, -75, -116, 111, 66, -106, 98, -117, -59])[0m
+[0m2021-03-06 15:47:35 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-06 15:47:35 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m
+[0m2021-03-06 15:48:05 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 15:48:06 V/Net 1537133819: Recv: RequireUpload(fileId=3212743272, uKey=[6, 50, -32, -32, -32, 46, 16, -117, -55, -51, -105, 101, 4, -6, -94, -79, -46, 58, -31, 85, -94, 31, -122, -31, 63, 1, -43, 113, 29, 72, -79, 78, 59, -64, 52, 78, -50, -86, -96, -107, -31, -76, 55, -44, -67, 95, 120, -116, 11, -78, -76, -8, -2, -47, -115, 122, -120, 95, 75, 73, -126, 21, -30, -60, 31, -76, 72, -19, -50, 97, 101, 11, 86, -14, 108, 93, -79, -99, -79, -34, 74, 40, 104, -49, -128, -17, 82, -84, -65, 127, -108, -12, -83, 8, 100, 125, 19, 113, -70, 117, -101, 24, -49, 123, 108, 70, 7, -91, 10, 69, -57, 114, -101, 84, 28, 96, -40, 67, -84, 25, 13, 37, -116, 71, 56, 14, -99, 23])[0m
+[0m2021-03-06 15:48:06 V/Net 1537133819: [Highway] Uploading group image to 111.30.171.186:443, size=72.97 KiB[0m
+[0m2021-03-06 15:48:06 V/Net 1537133819: [Highway] Uploading group image: succeed at 157 KiB/s[0m
+[0m2021-03-06 15:48:07 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 15:48:07 V/Net 1537133819: Recv: RequireUpload(fileId=2628968172, uKey=[-26, -118, -87, 67, -103, 34, -51, 75, 3, 44, 53, 13, -125, 61, 5, -13, -80, 102, -69, 108, -20, 127, 11, -22, -43, -35, 16, -100, 16, -63, 118, 86, -62, -43, -127, 107, 97, -49, -89, 69, -2, 57, 118, 8, 123, 1, -42, -28, 85, -12, 85, 118, -8, -65, 126, -7, 103, 123, 118, -25, 1, 108, -121, -112, 8, 23, 77, -42, 90, -81, 119, -15, -98, 91, 118, 127, 5, 57, 19, -73, 58, 8, -7, -93, 79, 24, -57, 94, 114, 73, -89, 67, 45, -26, 58, -52, 53, -54, 41, -9, -81, -23, 3, 103, -65, 86, 43, 19, -127, 15, -43, -101, -43, -102, 91, -96, 8, 49, 92, 90, 49, -103, -82, -81, 94, 53, 90, -19])[0m
+[0m2021-03-06 15:48:07 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-06 15:48:07 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m
+[0m2021-03-06 15:52:59 V/Net 1537133819: Loading BdhSession from cache file[0m
+[0m2021-03-06 15:52:59 V/Net 1537133819: Loading server list from cache.[0m
+[92m2021-03-06 15:52:59 I/Net 1537133819: Connected to server 111.30.169.27:443[0m
+[0m2021-03-06 15:52:59 V/Net 1537133819: Send: wtlogin.login[0m
+[0m2021-03-06 15:52:59 V/Net 1537133819: Recv: LoginPacketResponse.Success[0m
+[92m2021-03-06 15:52:59 I/Net 1537133819: Login successful[0m
+[0m2021-03-06 15:53:00 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-03-06 15:53:00 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[92m2021-03-06 15:53:00 I/Net 1537133819: Scheduled key refresh in 5h 55min 0.0s.[0m
+[0m2021-03-06 15:53:00 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-03-06 15:53:00 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[92m2021-03-06 15:53:00 I/Net 1537133819: Awaiting ConfigPushSvc.PushReq.[0m
+[92m2021-03-06 15:53:00 I/Net 1537133819: Syncing friend message history...[0m
+[92m2021-03-06 15:53:00 I/Net 1537133819: Start loading stranger list...[0m
+[92m2021-03-06 15:53:00 I/Net 1537133819: Start loading friend list...[0m
+[0m2021-03-06 15:53:00 V/Net 1537133819: Send: StatSvc.GetDevLoginInfo[0m
+[0m2021-03-06 15:53:00 V/Net 1537133819: Send: MessageSvc.PbGetMsg[0m
+[0m2021-03-06 15:53:00 V/Net 1537133819: Send: OidbSvc.0x496[0m
+[0m2021-03-06 15:53:00 V/Net 1537133819: Send: OidbSvc.0x5d2_0[0m
+[0m2021-03-06 15:53:00 V/Net 1537133819: Send: friendlist.getFriendGroupList[0m
+[0m2021-03-06 15:53:00 V/Net 1537133819: Recv: StrangerList.GetStrangerList.Response(result=0)[0m
+[92m2021-03-06 15:53:00 I/Net 1537133819: Successfully loaded stranger list: 0 in total[0m
+[0m2021-03-06 15:53:00 V/Net 1537133819: Recv: StatSvc.GetDevLoginInfo.Response(deviceList.size=1)[0m
+[92m2021-03-06 15:53:00 I/Net 1537133819: Syncing friend message history: Success.[0m
+[0m2021-03-06 15:53:00 V/Net 1537133819: Recv: TroopManagement.GetTroopConfig.Response(true)[0m
+[92m2021-03-06 15:53:00 I/Net 1537133819: Start loading group list...[0m
+[0m2021-03-06 15:53:00 V/Net 1537133819: Send: friendlist.GetTroopListReqV2[0m
+[0m2021-03-06 15:53:00 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-03-06 15:53:00 V/Net 1537133819: Loading friend list: 3/3[0m
+[92m2021-03-06 15:53:00 I/Net 1537133819: Successfully loaded friend list: 3 in total[0m
+[0m2021-03-06 15:53:00 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-03-06 15:53:00 V/Net 1537133819: Send: friendlist.GetTroopMemberListReq[0m
+[0m2021-03-06 15:53:00 V/Net 1537133819: Recv: FriendList.GetTroopMemberList.Response[0m
+[92m2021-03-06 15:53:00 I/Net 1537133819: Successfully loaded group list: 1 in total.[0m
+[0m2021-03-06 15:53:03 V/Net 1537133819: Recv: ConfigPushSvc.PushReq.PushReqResponse.ServerListPush[0m
+[92m2021-03-06 15:53:03 I/Net 1537133819: Server list updated.[0m
+[0m2021-03-06 15:53:03 V/Net 1537133819: Saving bdh session to cache[0m
+[0m2021-03-06 15:53:03 V/Net 1537133819: Saving server list to cache[0m
+[0m2021-03-06 15:53:03 V/Net 1537133819: Send: ConfigPushSvc.PushResp[0m
+[92m2021-03-06 15:53:03 I/Net 1537133819: ConfigPushSvc.PushReq: Server updated.[0m
+[96m2021-03-06 15:53:03 D/Net 1537133819: Received unknown commandName: ConfigPushSvc.PushDomain[0m
+[0m2021-03-06 15:53:03 V/Net 1537133819: Recv: ConfigPushSvc.PushReq.PushReqResponse.ConfigPush[0m
+[0m2021-03-06 15:53:03 V/Net 1537133819: Saving bdh session to cache[0m
+[0m2021-03-06 15:53:03 V/Net 1537133819: Send: ConfigPushSvc.PushResp[0m
+[0m2021-03-06 15:58:14 V/Net 1537133819: Send: Heartbeat.Alive[0m
+[0m2021-03-06 15:58:36 V/Net 1537133819: Loading BdhSession from cache file[0m
+[0m2021-03-06 15:58:36 V/Net 1537133819: Loading server list from cache.[0m
+[92m2021-03-06 15:58:36 I/Net 1537133819: Connected to server 111.30.179.179:443[0m
+[0m2021-03-06 15:58:36 V/Net 1537133819: Send: wtlogin.login[0m
+[0m2021-03-06 15:58:36 V/Net 1537133819: Recv: LoginPacketResponse.Success[0m
+[92m2021-03-06 15:58:36 I/Net 1537133819: Login successful[0m
+[0m2021-03-06 15:58:36 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-03-06 15:58:36 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[92m2021-03-06 15:58:36 I/Net 1537133819: Scheduled key refresh in 5h 55min 0.0s.[0m
+[0m2021-03-06 15:58:36 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-03-06 15:58:36 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[92m2021-03-06 15:58:36 I/Net 1537133819: Awaiting ConfigPushSvc.PushReq.[0m
+[92m2021-03-06 15:58:36 I/Net 1537133819: Syncing friend message history...[0m
+[92m2021-03-06 15:58:36 I/Net 1537133819: Start loading stranger list...[0m
+[92m2021-03-06 15:58:36 I/Net 1537133819: Start loading friend list...[0m
+[0m2021-03-06 15:58:36 V/Net 1537133819: Send: StatSvc.GetDevLoginInfo[0m
+[0m2021-03-06 15:58:36 V/Net 1537133819: Send: MessageSvc.PbGetMsg[0m
+[0m2021-03-06 15:58:36 V/Net 1537133819: Send: OidbSvc.0x496[0m
+[0m2021-03-06 15:58:36 V/Net 1537133819: Send: OidbSvc.0x5d2_0[0m
+[0m2021-03-06 15:58:36 V/Net 1537133819: Send: friendlist.getFriendGroupList[0m
+[0m2021-03-06 15:58:36 V/Net 1537133819: Recv: StrangerList.GetStrangerList.Response(result=0)[0m
+[92m2021-03-06 15:58:36 I/Net 1537133819: Successfully loaded stranger list: 0 in total[0m
+[0m2021-03-06 15:58:36 V/Net 1537133819: Recv: StatSvc.GetDevLoginInfo.Response(deviceList.size=1)[0m
+[92m2021-03-06 15:58:36 I/Net 1537133819: Syncing friend message history: Success.[0m
+[0m2021-03-06 15:58:36 V/Net 1537133819: Recv: TroopManagement.GetTroopConfig.Response(true)[0m
+[92m2021-03-06 15:58:36 I/Net 1537133819: Start loading group list...[0m
+[0m2021-03-06 15:58:36 V/Net 1537133819: Send: friendlist.GetTroopListReqV2[0m
+[0m2021-03-06 15:58:36 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-03-06 15:58:36 V/Net 1537133819: Loading friend list: 3/3[0m
+[92m2021-03-06 15:58:36 I/Net 1537133819: Successfully loaded friend list: 3 in total[0m
+[0m2021-03-06 15:58:36 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-03-06 15:58:36 V/Net 1537133819: Send: friendlist.GetTroopMemberListReq[0m
+[0m2021-03-06 15:58:36 V/Net 1537133819: Recv: FriendList.GetTroopMemberList.Response[0m
+[92m2021-03-06 15:58:36 I/Net 1537133819: Successfully loaded group list: 1 in total.[0m
+[96m2021-03-06 15:58:39 D/Net 1537133819: Received unknown commandName: ConfigPushSvc.PushDomain[0m
+[0m2021-03-06 15:58:39 V/Net 1537133819: Recv: ConfigPushSvc.PushReq.PushReqResponse.ConfigPush[0m
+[0m2021-03-06 15:58:39 V/Net 1537133819: Saving bdh session to cache[0m
+[0m2021-03-06 15:58:39 V/Net 1537133819: Send: ConfigPushSvc.PushResp[0m
+[92m2021-03-06 15:58:39 I/Net 1537133819: ConfigPushSvc.PushReq: Config updated.[0m
+[0m2021-03-06 15:59:42 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 15:59:42 V/Net 1537133819: Recv: RequireUpload(fileId=3149237694, uKey=[-128, -59, 93, 59, -111, 73, 23, -26, 31, -19, 99, 27, -93, 111, -19, -29, -20, 52, -96, -54, -61, 76, 122, -96, -67, 114, 10, 60, 93, 78, 83, 114, 19, -71, 74, 98, 107, -31, 96, 122, 108, -32, -95, -91, 9, 56, -118, -8, 97, 8, 19, -15, -81, 0, -111, 70, -8, 60, -125, -101, -95, -96, 39, -6, 87, 63, 47, -54, 17, 32, 33, -113, -60, 15, -122, -5, -31, 22, 22, -27, 107, -4, 86, 46, 115, -100, 72, -128, -123, -33, -2, -53, -109, -102, -73, -60, 68, 115, 123, 42, -48, 70, 33, -75, -28, 3, 94, 85, 73, -53, 16, -127, -91, -123, 122, 6, 103, 47, 76, -125, 116, -126, -55, -110, -98, 12, 80, -35])[0m
+[0m2021-03-06 15:59:42 V/Net 1537133819: [Highway] Uploading group image to 111.30.164.53:443, size=83.44 KiB[0m
+[0m2021-03-06 15:59:43 V/Net 1537133819: [Highway] Uploading group image: succeed at 166 KiB/s[0m
+[0m2021-03-06 15:59:43 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 15:59:43 V/Net 1537133819: Recv: RequireUpload(fileId=2572207528, uKey=[99, -14, 80, 38, 24, 78, 29, 98, 49, -24, -115, -60, 34, 21, 125, -55, 36, -33, 23, -44, -114, -18, 111, 116, -75, 74, 95, 122, 18, 73, 49, -95, -48, 6, -83, -48, 45, 112, 26, -95, 96, 93, -75, 85, -104, 127, 46, -125, -91, 39, 121, -10, -60, 106, -93, -88, -9, -75, -110, 96, -11, -88, 27, 7, -17, -57, 80, -9, -119, -93, -50, 125, 42, 124, 81, -55, -11, 42, -59, -74, -118, 4, 102, 118, -94, 43, 78, 74, 65, -60, -83, -45, -60, -74, 73, -12, -26, -39, -9, -78, 89, 94, 44, -13, -20, -12, -97, -21, 0, 31, -22, -37, -41, 119, 28, 106, 103, -35, -51, -16, 40, -37, -63, 119, 16, -20, -127, -77])[0m
+[0m2021-03-06 15:59:43 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-06 15:59:43 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m
+[0m2021-03-06 15:59:44 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 15:59:44 V/Net 1537133819: Recv: RequireUpload(fileId=2375331909, uKey=[16, 65, 89, -23, 9, -127, 19, 108, 62, 11, 13, 57, 41, -72, 88, 32, -28, -93, -66, -40, 94, 32, -106, -81, 92, -70, 85, -54, 59, -93, 118, -124, 123, 110, -69, 40, 52, -14, -43, -41, -12, -49, 100, 20, 119, -51, -75, 99, 0, 122, 49, 12, -82, 93, 5, -62, -68, -115, -49, 20, 16, -22, 77, 19, -60, 91, 103, 75, -98, -80, 78, -29, -42, -53, 87, 84, 99, 3, 9, 32, -1, -75, 84, -113, 45, -119, 41, -77, -34, 58, -37, 106, -38, 119, -45, 61, -96, 19, -16, -105, -59, 80, -106, -107, -96, 19, -77, 46, -36, 74, 45, -45, 16, -62, 60, -58, 59, -56, -77, 33, -83, -95, 65, 122, 87, 7, -120, 1])[0m
+[0m2021-03-06 15:59:44 V/Net 1537133819: [Highway] Uploading group image to 111.30.164.53:443, size=84.86 KiB[0m
+[0m2021-03-06 15:59:45 V/Net 1537133819: [Highway] Uploading group image: succeed at 151 KiB/s[0m
+[0m2021-03-06 15:59:45 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 15:59:45 V/Net 1537133819: Recv: RequireUpload(fileId=2827362269, uKey=[-72, 48, 4, -9, -98, 95, 103, -8, -80, 88, -45, -53, 34, 108, 42, 89, 12, 92, 127, -81, -109, 123, -110, -94, -19, -56, 86, -101, 64, -38, 82, -49, -20, 93, 90, -53, -83, 7, -88, -45, 15, -117, 7, 95, -103, 79, 26, 13, -58, 102, -124, -91, 61, -99, -3, -103, -121, -77, -64, -79, 6, 45, -5, 12, -95, -39, 81, 119, -119, -99, 103, 114, 38, 118, 67, -63, -10, 33, -103, -125, 51, -128, -6, -87, 126, -40, 45, -25, 121, 27, -109, -16, -63, -115, -97, 81, -31, 26, -16, -52, 59, 29, 72, 107, 6, -29, 13, -35, 81, 22, 2, -60, 92, 119, 105, 85, 27, -14, -14, -96, -70, 81, -56, 40, -80, -78, 61, 19])[0m
+[0m2021-03-06 15:59:45 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-06 15:59:45 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m
+[0m2021-03-06 15:59:46 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 15:59:46 V/Net 1537133819: Recv: RequireUpload(fileId=2467969690, uKey=[-89, 110, -66, -16, 77, -66, 126, 90, -78, -16, 64, -104, 96, -79, 60, -21, -22, 112, -109, -81, 106, -77, 123, 15, 8, 57, -112, 6, -30, -16, -14, 96, 11, 110, 81, -62, -26, -18, -73, 34, 119, 70, 124, 90, -111, 22, -15, 42, 98, 68, -34, -94, 48, -64, 31, -118, -47, 43, -33, 96, -77, 20, -58, -20, 60, 121, -41, -42, 81, 62, 84, -65, -69, -53, 4, -25, -20, 109, -112, -97, -104, -102, 102, 62, -46, 13, 4, -85, -55, 88, -119, 25, 83, 0, 28, 25, -7, -71, 47, 111, 16, 64, 5, 23, 101, 60, 57, -124, 61, 41, 49, -101, -23, 0, -92, 43, -81, -72, -72, -69, -114, 26, 16, 68, 9, 32, 44, -22])[0m
+[0m2021-03-06 15:59:46 V/Net 1537133819: [Highway] Uploading group image to 111.30.164.53:443, size=72.13 KiB[0m
+[0m2021-03-06 15:59:46 V/Net 1537133819: [Highway] Uploading group image: succeed at 199 KiB/s[0m
+[0m2021-03-06 15:59:46 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 15:59:47 V/Net 1537133819: Recv: RequireUpload(fileId=2246355257, uKey=[76, -26, 99, -83, -93, 44, 112, 115, -80, -52, -68, -85, -122, -109, 28, -21, -5, 51, 45, -96, 24, -106, 75, 80, -59, 27, 94, -120, 92, 110, 0, -68, -90, -60, -88, -8, -10, -31, 24, -60, -44, 72, 70, -117, 54, 78, -46, -119, -1, 49, -40, -72, 107, -60, 84, -95, -33, -1, 21, 10, -53, -102, 83, -4, 27, -83, -10, 71, -127, -59, -52, 17, -10, -49, -102, -24, -6, 112, -27, 39, 114, -119, -85, -76, -92, -120, -112, 31, 34, 23, 52, 34, 69, -69, 39, 22, -8, -34, 28, 24, 121, 119, 36, -53, -121, -92, -93, -54, 126, 42, 92, 53, 29, -89, -121, 53, -22, 106, -113, 95, 49, 30, 119, 96, -85, 92, 113, 93])[0m
+[0m2021-03-06 15:59:47 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-06 15:59:47 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m
+[0m2021-03-06 15:59:48 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 15:59:48 V/Net 1537133819: Recv: RequireUpload(fileId=3116388744, uKey=[-18, 29, -81, 39, 10, -44, 122, -23, 127, -34, 22, -40, -54, -95, -126, -126, -112, -66, 75, 51, -2, 18, -123, 14, -30, -28, -58, -56, -82, -110, 37, 4, 73, -61, -98, 4, 81, -34, 90, 27, -19, 80, 9, 55, 106, -41, 1, -24, -68, -124, 108, 102, -28, 98, -105, -72, 78, -91, -76, 43, -56, 124, -7, -76, 61, -85, 25, 42, 43, -12, 91, -38, 25, -29, 37, -100, 2, -76, -20, 83, 127, -42, -88, 111, -45, 30, 77, -23, 117, 37, 95, -6, -49, 64, 71, -103, -120, 31, 25, 5, -104, -24, -88, -12, 87, -56, -27, -84, -124, -106, 124, -64, -120, 62, 19, -45, -98, 91, 54, 118, 38, -20, 20, 80, -88, 95, -92, 32])[0m
+[0m2021-03-06 15:59:48 V/Net 1537133819: [Highway] Uploading group image to 111.30.164.53:443, size=85.99 KiB[0m
+[0m2021-03-06 15:59:48 V/Net 1537133819: [Highway] Uploading group image: succeed at 202 KiB/s[0m
+[0m2021-03-06 15:59:48 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 15:59:48 V/Net 1537133819: Recv: RequireUpload(fileId=2424514464, uKey=[-125, -6, 6, 102, -55, -92, -109, -90, 31, -62, -111, -63, 48, 123, -84, 14, 1, -122, -28, 88, 112, 37, -66, 13, -63, -24, 48, -11, -89, 75, -4, -57, 57, -96, -117, 44, 57, -49, 34, -40, -77, 18, 118, -23, -123, -117, -31, 28, -112, 26, -109, 59, 34, -56, -77, -14, -65, -117, 117, -39, 67, -52, -111, -91, -83, -89, -99, 69, 25, -14, 52, -95, 82, 27, -43, 18, 94, -58, -3, -53, 97, -115, -28, -17, -116, 76, -110, -42, 29, 67, 121, -11, 75, -109, -43, 29, 64, -33, -2, 58, 11, -41, -105, 39, -83, -12, -118, -120, 60, -126, 27, 29, -59, -1, -121, -21, 31, -24, 4, 14, 102, 20, -123, 28, -21, 14, 88, 50])[0m
+[0m2021-03-06 15:59:48 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-06 15:59:49 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m
+[0m2021-03-06 16:04:53 V/Net 1537133819: Loading BdhSession from cache file[0m
+[0m2021-03-06 16:04:53 V/Net 1537133819: Loading server list from cache.[0m
+[92m2021-03-06 16:04:53 I/Net 1537133819: Connected to server 111.30.179.179:443[0m
+[0m2021-03-06 16:04:53 V/Net 1537133819: Send: wtlogin.login[0m
+[0m2021-03-06 16:04:54 V/Net 1537133819: Recv: LoginPacketResponse.Success[0m
+[92m2021-03-06 16:04:54 I/Net 1537133819: Login successful[0m
+[0m2021-03-06 16:04:54 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-03-06 16:04:54 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[92m2021-03-06 16:04:54 I/Net 1537133819: Scheduled key refresh in 5h 55min 0.0s.[0m
+[0m2021-03-06 16:04:54 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-03-06 16:04:54 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[92m2021-03-06 16:04:54 I/Net 1537133819: Awaiting ConfigPushSvc.PushReq.[0m
+[92m2021-03-06 16:04:54 I/Net 1537133819: Syncing friend message history...[0m
+[92m2021-03-06 16:04:54 I/Net 1537133819: Start loading stranger list...[0m
+[92m2021-03-06 16:04:54 I/Net 1537133819: Start loading friend list...[0m
+[0m2021-03-06 16:04:54 V/Net 1537133819: Send: MessageSvc.PbGetMsg[0m
+[0m2021-03-06 16:04:54 V/Net 1537133819: Send: StatSvc.GetDevLoginInfo[0m
+[0m2021-03-06 16:04:54 V/Net 1537133819: Send: OidbSvc.0x496[0m
+[0m2021-03-06 16:04:54 V/Net 1537133819: Send: OidbSvc.0x5d2_0[0m
+[0m2021-03-06 16:04:54 V/Net 1537133819: Send: friendlist.getFriendGroupList[0m
+[0m2021-03-06 16:04:54 V/Net 1537133819: Recv: StrangerList.GetStrangerList.Response(result=0)[0m
+[92m2021-03-06 16:04:54 I/Net 1537133819: Successfully loaded stranger list: 0 in total[0m
+[0m2021-03-06 16:04:54 V/Net 1537133819: Recv: StatSvc.GetDevLoginInfo.Response(deviceList.size=1)[0m
+[92m2021-03-06 16:04:54 I/Net 1537133819: Syncing friend message history: Success.[0m
+[0m2021-03-06 16:04:54 V/Net 1537133819: Recv: TroopManagement.GetTroopConfig.Response(true)[0m
+[92m2021-03-06 16:04:54 I/Net 1537133819: Start loading group list...[0m
+[0m2021-03-06 16:04:54 V/Net 1537133819: Send: friendlist.GetTroopListReqV2[0m
+[0m2021-03-06 16:04:54 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-03-06 16:04:54 V/Net 1537133819: Loading friend list: 3/3[0m
+[92m2021-03-06 16:04:54 I/Net 1537133819: Successfully loaded friend list: 3 in total[0m
+[0m2021-03-06 16:04:54 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-03-06 16:04:54 V/Net 1537133819: Send: friendlist.GetTroopMemberListReq[0m
+[0m2021-03-06 16:04:54 V/Net 1537133819: Recv: FriendList.GetTroopMemberList.Response[0m
+[92m2021-03-06 16:04:54 I/Net 1537133819: Successfully loaded group list: 1 in total.[0m
+[96m2021-03-06 16:04:57 D/Net 1537133819: Received unknown commandName: ConfigPushSvc.PushDomain[0m
+[0m2021-03-06 16:04:57 V/Net 1537133819: Recv: ConfigPushSvc.PushReq.PushReqResponse.ConfigPush[0m
+[0m2021-03-06 16:04:57 V/Net 1537133819: Saving bdh session to cache[0m
+[0m2021-03-06 16:04:57 V/Net 1537133819: Send: ConfigPushSvc.PushResp[0m
+[92m2021-03-06 16:04:57 I/Net 1537133819: ConfigPushSvc.PushReq: Config updated.[0m
+[0m2021-03-06 16:06:01 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 16:06:02 V/Net 1537133819: Recv: RequireUpload(fileId=2187671468, uKey=[120, -108, -5, -27, 88, -122, -4, 19, 64, -120, -62, 94, -97, -39, -81, -74, -62, 98, -78, -122, -52, -97, 5, 49, -109, 30, -69, -13, 34, -67, -109, 62, 35, -7, 53, 84, -68, 80, 1, 101, 88, 40, -4, 2, 98, 51, -102, 16, 124, -85, 80, -49, 19, -103, -77, -75, 60, 68, -81, -22, 57, -86, 88, -11, 86, 18, -71, 19, -121, 38, 56, -114, -83, -89, -119, 58, 89, 93, -104, -69, 107, 5, 51, -10, -32, -104, -50, 79, 119, 92, -76, 69, 103, 92, -37, -45, -58, 17, -19, -73, -5, 16, 94, -87, -112, 0, 15, -46, -120, -50, -59, 113, -48, 63, -14, 18, 82, 103, 51, -35, 77, 30, 3, -52, -77, -113, -78, -3])[0m
+[0m2021-03-06 16:06:02 V/Net 1537133819: [Highway] Uploading group image to 111.30.171.169:443, size=88.13 KiB[0m
+[0m2021-03-06 16:06:02 V/Net 1537133819: [Highway] Uploading group image: succeed at 145 KiB/s[0m
+[0m2021-03-06 16:06:02 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 16:06:02 V/Net 1537133819: Recv: RequireUpload(fileId=2156179613, uKey=[-32, -120, 29, 114, -85, -47, -49, 79, 58, 96, -98, 97, 25, -24, -108, -21, -93, -26, 126, 104, 112, -54, -122, 107, 78, -40, 95, -8, -42, -126, -21, -25, 45, 35, -13, 59, 28, 35, 114, -90, 88, 86, -115, 5, -127, 67, -115, -110, -59, 40, -124, -128, -78, 80, 64, 44, -7, 91, -13, -55, 31, 80, 41, -7, 119, -59, -89, -92, -97, 64, 108, 5, -65, 50, 121, -96, 5, -113, -118, -24, -58, -121, -2, -43, 112, -20, -98, -76, -59, -70, -36, -76, 63, 78, -103, 25, 12, -71, 74, -27, -123, 116, -125, -100, 5, 127, 104, -62, 2, 127, -109, 25, 0, 84, -50, 8, -50, -60, 118, 65, -35, -44, -42, -83, -73, -19, -8, 9])[0m
+[0m2021-03-06 16:06:02 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-06 16:06:03 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m
+[0m2021-03-06 16:06:03 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 16:06:04 V/Net 1537133819: Recv: RequireUpload(fileId=2423468425, uKey=[115, 97, -20, 43, 1, -120, 9, 98, -114, -110, -114, 10, 71, -115, -119, 11, -10, 107, 58, 10, 83, 76, 24, -84, -13, 89, -47, -64, -75, 115, -35, 1, 80, 47, -45, -97, 28, 112, -43, 11, -94, 46, -56, 55, 93, 69, -37, 95, 17, 111, -85, 124, 124, 114, -106, -110, 115, -13, -26, -114, -92, 123, 86, 124, -121, -63, 77, 83, -48, 108, 104, 115, 69, -100, -113, 26, -103, 71, 126, -18, -128, 80, -38, -54, 54, -5, 10, -41, 115, -52, 15, 77, 20, 125, 35, -63, 39, -26, 36, -100, -104, 69, 20, 71, -91, -14, -43, 109, 16, 0, 53, -84, 86, -97, -98, -67, -89, 35, -93, 30, 9, -70, -92, 87, 52, -128, -57, 110])[0m
+[0m2021-03-06 16:06:04 V/Net 1537133819: [Highway] Uploading group image to 111.30.171.169:443, size=73.53 KiB[0m
+[0m2021-03-06 16:06:04 V/Net 1537133819: [Highway] Uploading group image: succeed at 169 KiB/s[0m
+[0m2021-03-06 16:06:04 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 16:06:04 V/Net 1537133819: Recv: RequireUpload(fileId=3028592677, uKey=[-19, 33, 46, 14, -40, -30, -111, -59, 94, -7, 76, 40, 44, -14, -75, 7, 108, -98, 50, -26, 52, 91, -19, -77, -119, -44, -35, -99, 13, 5, -61, -64, 96, 23, -122, -92, -84, -97, -91, 22, 85, 25, 18, 87, -51, 36, 91, 31, -89, 113, 81, -98, 126, -58, -126, -36, -116, 126, 73, -104, 81, 39, -123, 86, -13, -122, 113, -37, 49, -12, -78, 34, 73, -18, 59, 31, -110, -70, 93, -52, -36, 10, -103, 48, 53, -4, -109, -89, -119, -18, -90, -120, -56, 91, -45, 96, -107, -92, 95, -56, -93, -63, 39, 44, 31, 64, -119, 42, -76, -110, 108, -22, 94, -4, -7, -59, 25, -16, 43, 23, -109, 94, 10, -6, -126, -10, 50, -41])[0m
+[0m2021-03-06 16:06:04 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-06 16:06:04 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m
+[0m2021-03-06 16:06:05 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 16:06:05 V/Net 1537133819: Recv: RequireUpload(fileId=3021610030, uKey=[92, 111, -40, 57, 80, 117, -25, -9, 91, -13, -85, 77, -102, -67, 34, -108, -13, 111, -21, -38, -120, 6, 45, -103, 70, 57, -73, -79, 23, -7, -68, 68, 90, 68, 56, 21, -23, -60, 49, -34, 123, -12, 39, 120, -99, 85, -128, -102, 32, -15, 27, -60, -101, -123, -58, -55, 85, -77, -118, 66, -76, 76, 98, -95, -32, -62, 127, -39, -66, 121, 82, 29, 41, -13, 76, 73, -100, -72, 90, 28, 67, 15, -49, -11, 113, -70, 59, -56, 29, -88, 105, -4, -73, -15, -117, -52, 74, 10, 105, 120, -75, 99, 36, -20, 81, 9, -51, 1, -127, -32, 45, 46, 17, -80, 96, -107, 87, -36, 120, 116, 25, -75, 69, -93, -28, 18, -62, -86])[0m
+[0m2021-03-06 16:06:05 V/Net 1537133819: [Highway] Uploading group image to 111.30.171.169:443, size=74.92 KiB[0m
+[0m2021-03-06 16:06:06 V/Net 1537133819: [Highway] Uploading group image: succeed at 182 KiB/s[0m
+[0m2021-03-06 16:06:06 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 16:06:06 V/Net 1537133819: Recv: RequireUpload(fileId=2423443655, uKey=[0, 47, -13, -46, 50, 32, 84, -57, -99, 40, 30, -3, 91, 76, 90, -18, 75, 87, 3, -58, 12, 102, -70, 5, 52, -17, 113, 117, 31, -17, 127, -100, -37, -99, 14, -22, -57, -47, 102, -83, 22, 78, -49, 83, 79, -96, -109, -17, -102, -6, -108, 10, 55, -64, -6, -8, 86, 90, -124, -20, 85, 101, 121, 63, -38, -81, 32, 116, 93, 68, -126, 42, 116, 2, 112, 120, -38, -73, 119, 4, -97, -20, -76, -122, 84, -105, 41, 16, 127, 63, 74, 39, 87, -33, -78, 113, -89, -66, 100, -128, 48, -104, -43, -24, 67, -20, 29, 124, 18, 54, -105, -103, 48, -6, 9, -47, 26, 78, -65, -94, 85, -7, -66, 76, -37, 61, -74, -101])[0m
+[0m2021-03-06 16:06:06 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-06 16:06:06 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m
+[0m2021-03-06 16:07:26 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 16:07:26 V/Net 1537133819: Recv: RequireUpload(fileId=2707548065, uKey=[105, 60, 17, -21, 105, -72, 100, 64, 5, 82, 112, 76, 112, 26, 117, -44, 2, -110, -53, -103, 83, -111, 28, 91, -60, -37, -93, 47, -28, -105, 18, -71, 9, -83, 39, 21, -98, -128, 24, -12, 24, 57, -114, 114, -90, -68, -79, 123, 27, 7, 111, -91, -67, -84, -125, 126, 96, 1, 87, -75, -117, 89, 69, 43, -34, -2, 20, -2, -11, 28, 90, 75, 79, -34, 105, -28, -108, 45, 38, 29, 3, 40, 54, 1, 123, -26, -5, -45, 81, 82, -106, -8, 87, -54, 100, -3, -29, -88, 59, -76, -55, -73, -118, 16, -10, -60, 94, -109, -57, -114, 58, 84, -34, -27, -96, -5, -116, -16, 51, 112, 69, 51, -107, -3, -12, 68, 83, -8])[0m
+[0m2021-03-06 16:07:26 V/Net 1537133819: [Highway] Uploading group image to 111.30.171.169:443, size=518.02 KiB[0m
+[0m2021-03-06 16:07:27 V/Net 1537133819: [Highway] Uploading group image: succeed at 438 KiB/s[0m
+[0m2021-03-06 16:07:27 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 16:07:27 V/Net 1537133819: Recv: RequireUpload(fileId=2185884200, uKey=[63, 62, -66, 30, -14, 20, 103, -121, 124, 58, 96, -7, -31, -79, 114, -8, -93, -55, 84, -53, 123, -69, 26, -9, 101, -24, -57, 91, -114, -94, -24, 18, 108, -45, 54, 105, 94, 94, 74, -49, 59, -56, 26, 28, 11, 108, 67, -82, -114, -118, -114, -73, -13, 15, -46, -113, -77, -69, 83, -89, -125, 26, -111, 123, 70, -11, 21, 84, -57, 43, -39, 124, -30, 19, -68, -28, -5, 78, 45, -103, 122, -119, 97, -115, -127, 44, -79, 72, 64, 89, -53, 99, 105, 43, 3, 106, -52, 124, -29, -128, 90, -116, -66, 124, -63, 35, -114, 126, 28, -9, -91, -114, 13, 53, 5, 75, 98, 32, -28, -75, 29, -13, -21, -95, -20, 70, -66, -31])[0m
+[0m2021-03-06 16:07:27 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-06 16:07:27 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m
+[0m2021-03-06 16:07:28 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 16:07:28 V/Net 1537133819: Recv: RequireUpload(fileId=3113010486, uKey=[-102, 18, 37, -9, -70, -53, 127, 39, -84, 29, -104, -21, 12, -11, 80, -119, 87, -103, 34, -66, -85, 21, -41, -121, -106, -125, -19, 105, 92, 59, -43, 92, -38, 114, 96, 67, 61, 69, -30, 80, -84, -55, -9, 23, -48, 101, 40, 103, 101, 73, 83, -1, 87, -93, 62, -63, 124, -64, -80, -94, -18, -118, 45, -117, -79, -102, 28, -72, 87, 109, 82, -23, -92, 81, 69, 126, -48, -5, -38, 16, -28, -100, 119, 86, 47, 122, 84, -61, 113, -46, 27, -16, -46, 104, 99, -85, -30, -99, -22, -30, -128, -103, 0, 13, -8, 69, -121, -96, 20, -41, -81, 24, -124, 102, 51, 108, 71, 98, 99, -78, 23, -22, 114, -77, 74, -86, -11, 36])[0m
+[0m2021-03-06 16:07:28 V/Net 1537133819: [Highway] Uploading group image to 111.30.171.169:443, size=199.99 KiB[0m
+[0m2021-03-06 16:07:29 V/Net 1537133819: [Highway] Uploading group image: succeed at 287 KiB/s[0m
+[0m2021-03-06 16:07:29 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 16:07:29 V/Net 1537133819: Recv: RequireUpload(fileId=2623899387, uKey=[83, 60, 12, -119, -93, 121, 43, 7, -117, -111, 23, 125, -45, -107, -99, -40, -86, -19, -62, -18, 93, -93, 55, -110, 99, 64, -120, -126, -74, -93, -16, 21, -75, -63, -2, -93, -93, 111, -74, -88, 60, -103, -34, -32, 115, 88, -69, -35, 60, -41, 6, 63, -94, 17, -113, 85, 111, -38, 122, -95, 11, 102, -5, 99, 10, -11, -37, 70, -111, 2, 91, -106, -58, -94, 63, 70, 116, -112, 29, 114, 34, 119, -91, 44, -37, -28, -39, -57, 47, 73, 64, -87, 73, -42, -120, 108, -39, 34, 108, 90, -82, -9, 66, 32, 19, 114, 124, 85, 66, -29, 15, -55, -110, 41, -10, -55, 15, -62, -127, 29, -82, -77, 43, -89, 52, -49, 49, 111])[0m
+[0m2021-03-06 16:07:29 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-06 16:07:29 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m
+[0m2021-03-06 16:07:31 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 16:07:31 V/Net 1537133819: Recv: RequireUpload(fileId=2396801364, uKey=[-58, 59, -100, -19, -96, -36, 27, -78, 100, -11, -91, -103, 60, 7, 53, -68, 70, -111, 120, -68, -80, -21, 43, 40, 89, -4, 85, -128, -75, -87, 64, -28, 105, 111, 105, 34, 21, -52, -80, 97, -92, 84, 66, 61, 49, 85, 38, 105, -98, -74, 120, 41, 120, -56, 125, 69, -2, 103, 83, -62, 76, -123, 14, -60, -94, -27, -69, -106, -81, -101, 32, 118, 16, 66, 90, 120, -50, -34, -49, -83, -108, -119, -34, 0, 39, 2, 110, 20, -36, -31, 1, -6, -128, -46, -32, 117, 30, -93, -10, 126, 125, 5, 83, 110, 78, -33, 51, -24, 63, 92, -75, -9, 50, 7, 69, 96, 2, -33, 73, -61, 120, -65, 28, -59, -2, 36, -18, 101])[0m
+[0m2021-03-06 16:07:31 V/Net 1537133819: [Highway] Uploading group image to 111.30.171.169:443, size=455.21 KiB[0m
+[0m2021-03-06 16:07:32 V/Net 1537133819: [Highway] Uploading group image: succeed at 452 KiB/s[0m
+[0m2021-03-06 16:07:32 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 16:07:32 V/Net 1537133819: Recv: RequireUpload(fileId=3191746811, uKey=[-2, -58, 7, -81, 89, -8, 96, -87, -67, -104, -64, 101, -127, 25, 91, -16, -107, -77, 123, 63, -101, 36, -29, -49, 91, 11, -52, -123, -28, -81, 88, -80, 76, -60, 77, -86, 54, -110, 114, -83, -88, -33, -125, 58, 46, 89, -101, -105, 35, 63, -22, -16, -18, -31, -15, -32, 98, 65, -25, -114, -23, 8, -56, 117, 96, 20, -7, -98, 120, 63, -62, 14, -125, 9, -109, 65, -114, -82, 45, -85, -13, 99, 42, -65, -74, -46, 105, 3, -120, -90, 62, -11, -67, -13, -87, -39, -55, 68, -19, 62, 34, 38, -18, 4, -47, -92, -105, -25, 109, -106, -77, 63, -51, -6, 58, 52, 116, 80, -18, 93, -116, -123, -18, -36, -34, 10, 12, 75])[0m
+[0m2021-03-06 16:07:32 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-06 16:07:33 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m
+[0m2021-03-06 16:07:34 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 16:07:34 V/Net 1537133819: Recv: RequireUpload(fileId=2404361892, uKey=[-11, 17, -88, -106, -79, 34, 101, -44, 50, -77, 63, 83, -17, -28, 75, -89, -101, 55, 127, -61, -121, 102, 17, 51, -70, 105, -63, -118, -83, -120, -15, -76, -47, -69, -89, 93, -63, 16, 14, -61, -112, -20, 105, 51, 21, 88, -124, 59, -69, -103, 42, -96, -87, -27, 27, -18, -60, 110, -63, 49, -39, -106, -54, -94, -123, 53, -93, -26, -17, -128, -42, -116, 98, -117, -118, -60, -62, 77, -91, -88, -80, 42, 30, -6, -114, 95, -41, 62, -19, 51, -45, -26, 107, 14, 60, 120, -26, 34, 116, -34, -99, 42, -128, 36, -45, -64, -126, 43, -87, -8, -52, -68, -78, -29, 12, 31, -127, 13, -35, 15, -98, -116, -8, -60, 121, 107, -24, -37])[0m
+[0m2021-03-06 16:07:34 V/Net 1537133819: [Highway] Uploading group image to 111.30.171.169:443, size=704.35 KiB[0m
+[0m2021-03-06 16:07:36 V/Net 1537133819: [Highway] Uploading group image: succeed at 506 KiB/s[0m
+[0m2021-03-06 16:07:36 V/Net 1537133819: Send: ImgStore.GroupPicUp[0m
+[0m2021-03-06 16:07:36 V/Net 1537133819: Recv: RequireUpload(fileId=2171306243, uKey=[-71, -6, 100, -3, 54, 58, 115, -94, -93, 104, -54, -49, 93, -114, -31, -108, 5, -91, -69, -30, -125, 47, 69, 82, 34, -64, 72, 46, -94, 77, -105, -25, -64, 127, -106, 96, 46, 97, 52, 55, 69, 7, 104, 79, 15, -38, -31, -124, -126, 41, 71, -43, 23, 57, 59, 60, 21, 49, -24, -95, -8, 62, 55, 23, -124, -12, -42, -26, -85, -103, -116, 7, -88, -58, -9, -16, -43, -73, 55, 49, 65, -72, -125, -50, -110, -23, 111, 54, 25, 90, 38, -119, 94, -36, -50, -79, -55, 5, -16, -101, 58, 31, 10, -84, -105, 4, 6, 64, -53, -77, 119, -70, 70, 69, 18, 36, -93, 19, 101, -120, 4, -70, 117, -73, 29, -45, 107, 105])[0m
+[0m2021-03-06 16:07:36 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-06 16:07:36 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m

@@ -2,9 +2,9 @@ package top.colter.mirai.plugin.utils
 
 import com.alibaba.fastjson.JSON
 import com.alibaba.fastjson.JSONObject
-import net.mamoe.mirai.utils.ExternalResource
 import net.mamoe.mirai.utils.ExternalResource.Companion.toExternalResource
 import top.colter.mirai.plugin.PluginConfig
+import top.colter.mirai.plugin.PluginConfig.BPI
 import top.colter.mirai.plugin.PluginConfig.basePath
 import top.colter.mirai.plugin.PluginData
 import top.colter.mirai.plugin.PluginData.runPath
@@ -16,35 +16,43 @@ import java.awt.Color
 import java.awt.Font
 import java.awt.Graphics2D
 import java.awt.RenderingHints
+import java.awt.geom.Ellipse2D
 import java.awt.image.BufferedImage
 import java.io.*
 import java.net.URL
 import java.text.SimpleDateFormat
 import javax.imageio.ImageIO
 import kotlin.math.ceil
+import java.io.IOException
+
+import java.io.ByteArrayInputStream
+
+import java.io.ByteArrayOutputStream
 
 /**
  * 构建动态信息图片
  */
-fun buildMessageImage(dynamic: Dynamic, user: User): String {
+suspend fun buildMessageImage(dynamic: Dynamic, user: User): String? {
     var msg = dynamic.content
     //文本翻译
-    if (PluginConfig.SECURITY_KEY!=""){
-        try {
-            val api = TransApi(PluginConfig.APP_ID, PluginConfig.SECURITY_KEY)
-            val resMsg = JSON.parseObject(api.getTransResult(msg, "auto", "zh"))
-            if (resMsg.getString("from")!="zh") {
-                msg += "\n\n翻译: \n"
-                for (item in resMsg.getJSONArray("trans_result")){
-                    msg+=(item as JSONObject).getString("dst")
-                    msg+="\n"
+    if (PluginConfig.baiduTranslate["enable"]=="true"){
+        if (PluginConfig.baiduTranslate["SECURITY_KEY"]!=""){
+            try {
+                val api = TransApi(PluginConfig.baiduTranslate["APP_ID"]!!, PluginConfig.baiduTranslate["SECURITY_KEY"]!!)
+                val resMsg = JSON.parseObject(api.getTransResult(msg, "auto", "zh"))
+                if (resMsg.getString("from")!="zh") {
+                    msg += "\n\n翻译: \n"
+                    for (item in resMsg.getJSONArray("trans_result")){
+                        msg+=(item as JSONObject).getString("dst")
+                        msg+="\n"
+                    }
                 }
+            }catch (e: Exception){
+                PluginMain.logger.error("Baidu translation failure! 百度翻译失败!")
             }
-        }catch (e: Exception){
-            PluginMain.logger.error("Baidu translation failure! 百度翻译失败!")
+        }else{
+            PluginMain.logger.error("Baidu translation API not configured! 未配置百度翻译API")
         }
-    }else{
-        PluginMain.logger.error("Baidu translation API not configured! 未配置百度翻译API")
     }
 
 
@@ -158,8 +166,8 @@ fun buildMessageImage(dynamic: Dynamic, user: User): String {
         centerG2.drawString(text, x, 50)
     }
 
+    //如动态有图片则添加图片
     try{
-        //如动态有图片则添加图片
         if (dynamic.pictures != null && dynamic.pictures?.size!=0){
             for (imgSrc in dynamic.pictures!!){
                 val img = ImageIO.read(URL(imgSrc))
@@ -196,10 +204,10 @@ fun buildMessageImage(dynamic: Dynamic, user: User): String {
     var path = ""
     if (dynamic.isDynamic){
         bottomG2.drawString("动态ID:${dynamic.did}", 80, 39)
-        path = "$runPath$basePath/img/dynamic/${user.uid}/${dynamic.did}.jpg"
+        path = "$runPath$basePath/img/dynamic/${user.uid}/${dynamic.did}.png"
     }else{
         bottomG2.drawString("直播ID:${dynamic.did}", 80, 39)
-        path = "$runPath$basePath/img/dynamic/live-${SimpleDateFormat("yyMMdd-HHmm").format(timestamp)}.jpg"
+        path = "$runPath$basePath/img/dynamic/live-${SimpleDateFormat("yyMMdd-HHmm").format(timestamp)}.png"
     }
 
     //构建最终图片
@@ -211,22 +219,26 @@ fun buildMessageImage(dynamic: Dynamic, user: User): String {
         preY += bi.height
     }
 
-
     //把图片写入文件
-    return try{
-        ImageIO.write(endBi, "JPEG", FileOutputStream(path))
-        path
-    }catch (e: Exception){
-        PluginMain.logger.error("储存图片失败")
-        ""
+    if (PluginConfig.dynamic["saveDynamicImage"]=="true") {
+        val file = File(path)
+        if (!file.parentFile.exists()){
+            file.parentFile.mkdirs()
+        }
+        try{
+            ImageIO.write(endBi, "PNG", file)
+        }catch (e: Exception){
+            PluginMain.logger.error("储存图片失败")
+        }
     }
+    return getImageIdByBi(bi)
 }
 
 
 /**
  * 生成每日总结图片
  */
-fun buildSummaryImage(timestamp: Long, info: MutableMap<String,MutableMap<String, Int>>): String {
+suspend fun buildSummaryImage(timestamp: Long, info: MutableMap<String,MutableMap<String, Int>>): String? {
 
     val time = SimpleDateFormat("MM.dd").format(timestamp)
 
@@ -254,23 +266,28 @@ fun buildSummaryImage(timestamp: Long, info: MutableMap<String,MutableMap<String
         y += 200
     }
 
-    val path = "$runPath$basePath/img/summary/${SimpleDateFormat("yyyyMMdd").format(timestamp)}.jpg"
     //把图片写入文件
-    return try{
-        ImageIO.write(bi, "JPEG", FileOutputStream(path))
-        path
-    }catch (e: Exception){
-        PluginMain.logger.error("储存图片失败")
-        ""
+    if (PluginConfig.dynamic["saveDynamicImage"]=="true") {
+        val path = "$runPath$basePath/img/summary/${SimpleDateFormat("yyyyMMdd").format(timestamp)}.png"
+        val file = File(path)
+        if (!file.parentFile.exists()){
+            file.parentFile.mkdirs()
+        }
+        try{
+            ImageIO.write(bi, "PNG", file)
+        }catch (e: Exception){
+            PluginMain.logger.error("储存图片失败")
+        }
     }
+    return getImageIdByBi(bi)
 }
 
 /**
  * 生成粉丝数图片
  */
-fun buildFanImage(uid: Int): String {
+suspend fun buildFanImage(uid: Int): String? {
 
-    val followNum = httpGet(PluginConfig.followNumApi + uid).getJSONObject("data").getInteger("follower").toInt()
+    val followNum = httpGet(BPI["followNum"] + uid).getJSONObject("data").getInteger("follower").toInt()
 
     val bg = ImageIO.read(File("$runPath$basePath/img/template/$uid" + "fan.png"))
     val bi = BufferedImage(1920, 426, BufferedImage.TYPE_INT_RGB)
@@ -287,13 +304,125 @@ fun buildFanImage(uid: Int): String {
     val timestamp :Long = System.currentTimeMillis()
     g2.drawString(SimpleDateFormat("yyyy.MM.dd  HH:mm:ss").format(timestamp), 570, 345)
 
-    val path = "$runPath$basePath/img/fan/${uid}-${SimpleDateFormat("yyyyMMdd").format(timestamp)}.jpg"
     //把图片写入文件
-    return try{
-        ImageIO.write(bi, "JPEG", FileOutputStream(path))
-        path
-    }catch (e: Exception){
-        PluginMain.logger.error("储存图片失败")
-        ""
+    if (PluginConfig.dynamic["saveDynamicImage"]=="true") {
+        val path = "$runPath$basePath/img/fan/${uid}-${SimpleDateFormat("yyyyMMdd").format(timestamp)}.png"
+        val file = File(path)
+        if (!file.parentFile.exists()){
+            file.parentFile.mkdirs()
+        }
+        try{
+            ImageIO.write(bi, "PNG", file)
+        }catch (e: Exception){
+            PluginMain.logger.error("储存图片失败")
+        }
     }
+    return getImageIdByBi(bi)
+}
+
+
+/**
+ * 生成模板图
+ */
+fun generateImg(uid: String, name: String, face: String, pendant: String){
+
+    try {
+        ImageIO.read(File("$runPath$basePath/img/template/$uid.png"))
+    }catch (e:Exception){
+        val bg = ImageIO.read(File("$runPath$basePath/img/template/template.png"))
+        val faceImg = ImageIO.read(URL(face))
+
+        val bi = BufferedImage(bg.width, bg.height, BufferedImage.TYPE_4BYTE_ABGR)
+        val g2 : Graphics2D = bi.graphics as Graphics2D
+        g2.drawImage(bg, 0, 0, null) //画入背景
+        g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_GASP)
+        g2.font = Font("汉仪汉黑W", Font.PLAIN, 130)
+        g2.color = Color(61, 61, 61)
+        g2.drawString(name, 480, 200)
+
+        var width = 195
+        if (pendant==""){
+            width = 210
+        }
+
+        val reImg = scaleByPercentage(faceImg,width,width)
+
+        val faceBi = BufferedImage(width, width, BufferedImage.TYPE_4BYTE_ABGR)
+        val faceG2 : Graphics2D = faceBi.graphics as Graphics2D
+        faceG2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        val shape = Ellipse2D.Double(0.0, 0.0, width.toDouble(), width.toDouble())
+        faceG2.clip = shape
+        faceG2.drawImage(reImg, 0, 0, null)
+        faceG2.dispose();
+
+        g2.drawImage(faceBi, 200, 100, null)
+
+        if (pendant!=""){
+            val pendantImg = ImageIO.read(URL(pendant))
+            val rePendant = scaleByPercentage(pendantImg,330,330)
+            g2.drawImage(rePendant, 130, 40, null)
+        }
+
+        //把图片写入文件
+        try{
+            ImageIO.write(bi, "PNG", FileOutputStream("$runPath$basePath/img/template/$uid.png"))
+        }catch (e: Exception){
+            PluginMain.logger.error("储存图片失败")
+        }
+    }
+}
+
+suspend fun getImageIdByBi(bi : BufferedImage):String?{
+    val input = biToIs(bi)
+    val er = input?.toExternalResource()
+    return try {
+        er?.let { PluginMain.bot.getGroup(PluginConfig.adminGroup)?.uploadImage(it)?.imageId }
+    } catch (e: Exception) {
+        PluginMain.logger.error("上传图片失败")
+        null
+    } finally {
+        input?.close()
+        er?.close()
+    }
+}
+
+/**
+ * 将BufferedImage转换为InputStream
+ * @param image
+ * @return
+ */
+fun biToIs(image: BufferedImage?): InputStream? {
+    val os = ByteArrayOutputStream()
+    try {
+        ImageIO.write(image, "PNG", os)
+        return ByteArrayInputStream(os.toByteArray())
+    } catch (e: IOException) {
+        PluginMain.logger.error("BufferedImage转换失败")
+    }
+    return null
+}
+
+/**
+ * 缩放图片
+ */
+fun scaleByPercentage(inputImage: BufferedImage, newWidth: Int, newHeight: Int): BufferedImage? {
+    // 获取原始图像透明度类型
+    try {
+        val type = inputImage.colorModel.transparency
+        val width = inputImage.width
+        val height = inputImage.height
+        // 开启抗锯齿
+        val renderingHints = RenderingHints(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON)
+        // 使用高质量压缩
+        renderingHints[RenderingHints.KEY_RENDERING] = RenderingHints.VALUE_RENDER_QUALITY
+        val img = BufferedImage(newWidth, newHeight, type)
+        val graphics2d = img.createGraphics()
+        graphics2d.setRenderingHints(renderingHints)
+        graphics2d.drawImage(inputImage, 0, 0, newWidth, newHeight, 0, 0, width, height, null)
+        graphics2d.dispose()
+        return img
+    } catch (e: java.lang.Exception) {
+        e.printStackTrace()
+    }
+    return null
 }

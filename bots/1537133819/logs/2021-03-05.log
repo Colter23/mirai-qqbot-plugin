@@ -1,0 +1,136 @@
+[0m2021-03-05 11:47:47 V/Net 1537133819: Loading BdhSession from cache file[0m
+[0m2021-03-05 11:47:47 V/Net 1537133819: Loading server list from cache.[0m
+[92m2021-03-05 11:47:47 I/Net 1537133819: Connected to server 36.155.229.228:80[0m
+[0m2021-03-05 11:47:47 V/Net 1537133819: Send: wtlogin.login[0m
+[0m2021-03-05 11:47:47 V/Net 1537133819: Recv: LoginPacketResponse.Success[0m
+[92m2021-03-05 11:47:47 I/Net 1537133819: Login successful[0m
+[0m2021-03-05 11:47:47 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-03-05 11:47:47 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[0m2021-03-05 11:47:47 V/Net 1537133819: Send: StatSvc.register[0m
+[92m2021-03-05 11:47:47 I/Net 1537133819: Scheduled key refresh in 5h 55min 0.0s.[0m
+[0m2021-03-05 11:47:47 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[92m2021-03-05 11:47:47 I/Net 1537133819: Awaiting ConfigPushSvc.PushReq.[0m
+[92m2021-03-05 11:47:47 I/Net 1537133819: Syncing friend message history...[0m
+[92m2021-03-05 11:47:47 I/Net 1537133819: Start loading stranger list...[0m
+[92m2021-03-05 11:47:47 I/Net 1537133819: Start loading friend list...[0m
+[0m2021-03-05 11:47:47 V/Net 1537133819: Send: MessageSvc.PbGetMsg[0m
+[0m2021-03-05 11:47:47 V/Net 1537133819: Send: StatSvc.GetDevLoginInfo[0m
+[0m2021-03-05 11:47:47 V/Net 1537133819: Send: OidbSvc.0x496[0m
+[0m2021-03-05 11:47:47 V/Net 1537133819: Send: OidbSvc.0x5d2_0[0m
+[0m2021-03-05 11:47:47 V/Net 1537133819: Send: friendlist.getFriendGroupList[0m
+[0m2021-03-05 11:47:47 V/Net 1537133819: Recv: StatSvc.GetDevLoginInfo.Response(deviceList.size=1)[0m
+[0m2021-03-05 11:47:47 V/Net 1537133819: Recv: StrangerList.GetStrangerList.Response(result=0)[0m
+[92m2021-03-05 11:47:47 I/Net 1537133819: Successfully loaded stranger list: 0 in total[0m
+[92m2021-03-05 11:47:47 I/Net 1537133819: Syncing friend message history: Success.[0m
+[0m2021-03-05 11:47:47 V/Net 1537133819: Recv: TroopManagement.GetTroopConfig.Response(true)[0m
+[92m2021-03-05 11:47:47 I/Net 1537133819: Start loading group list...[0m
+[0m2021-03-05 11:47:47 V/Net 1537133819: Send: friendlist.GetTroopListReqV2[0m
+[0m2021-03-05 11:47:48 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-03-05 11:47:48 V/Net 1537133819: Loading friend list: 3/3[0m
+[92m2021-03-05 11:47:48 I/Net 1537133819: Successfully loaded friend list: 3 in total[0m
+[0m2021-03-05 11:47:48 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-03-05 11:47:48 V/Net 1537133819: Send: friendlist.GetTroopMemberListReq[0m
+[0m2021-03-05 11:47:48 V/Net 1537133819: Recv: FriendList.GetTroopMemberList.Response[0m
+[92m2021-03-05 11:47:48 I/Net 1537133819: Successfully loaded group list: 1 in total.[0m
+[0m2021-03-05 11:47:50 V/Net 1537133819: Recv: ConfigPushSvc.PushReq.PushReqResponse.ServerListPush[0m
+[92m2021-03-05 11:47:50 I/Net 1537133819: Server list updated.[0m
+[0m2021-03-05 11:47:50 V/Net 1537133819: Saving bdh session to cache[0m
+[0m2021-03-05 11:47:50 V/Net 1537133819: Saving server list to cache[0m
+[0m2021-03-05 11:47:50 V/Net 1537133819: Send: ConfigPushSvc.PushResp[0m
+[92m2021-03-05 11:47:50 I/Net 1537133819: ConfigPushSvc.PushReq: Server updated.[0m
+[96m2021-03-05 11:47:50 D/Net 1537133819: Received unknown commandName: ConfigPushSvc.PushDomain[0m
+[0m2021-03-05 11:47:50 V/Net 1537133819: Recv: ConfigPushSvc.PushReq.PushReqResponse.ConfigPush[0m
+[0m2021-03-05 11:47:50 V/Net 1537133819: Saving bdh session to cache[0m
+[0m2021-03-05 11:47:50 V/Net 1537133819: Send: ConfigPushSvc.PushResp[0m
+[0m2021-03-05 11:48:03 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-05 11:48:04 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m
+[0m2021-03-05 11:48:08 V/Net 1537133819: Send: OnlinePush.RespPush[0m
+[0m2021-03-05 11:48:11 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-05 11:48:11 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m
+[0m2021-03-05 11:48:17 V/Net 1537133819: Send: OnlinePush.RespPush[0m
+[0m2021-03-05 11:48:41 V/Net 1537133819: Loading BdhSession from cache file[0m
+[0m2021-03-05 11:48:41 V/Net 1537133819: Loading server list from cache.[0m
+[92m2021-03-05 11:48:41 I/Net 1537133819: Connected to server 36.155.229.198:80[0m
+[0m2021-03-05 11:48:41 V/Net 1537133819: Send: wtlogin.login[0m
+[0m2021-03-05 11:48:41 V/Net 1537133819: Recv: LoginPacketResponse.Success[0m
+[92m2021-03-05 11:48:41 I/Net 1537133819: Login successful[0m
+[0m2021-03-05 11:48:41 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-03-05 11:48:41 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[0m2021-03-05 11:48:41 V/Net 1537133819: Send: StatSvc.register[0m
+[92m2021-03-05 11:48:41 I/Net 1537133819: Scheduled key refresh in 5h 55min 0.0s.[0m
+[0m2021-03-05 11:48:41 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[92m2021-03-05 11:48:41 I/Net 1537133819: Awaiting ConfigPushSvc.PushReq.[0m
+[92m2021-03-05 11:48:41 I/Net 1537133819: Syncing friend message history...[0m
+[92m2021-03-05 11:48:41 I/Net 1537133819: Start loading stranger list...[0m
+[92m2021-03-05 11:48:41 I/Net 1537133819: Start loading friend list...[0m
+[0m2021-03-05 11:48:41 V/Net 1537133819: Send: MessageSvc.PbGetMsg[0m
+[0m2021-03-05 11:48:41 V/Net 1537133819: Send: StatSvc.GetDevLoginInfo[0m
+[0m2021-03-05 11:48:41 V/Net 1537133819: Send: OidbSvc.0x496[0m
+[0m2021-03-05 11:48:41 V/Net 1537133819: Send: OidbSvc.0x5d2_0[0m
+[0m2021-03-05 11:48:41 V/Net 1537133819: Send: friendlist.getFriendGroupList[0m
+[0m2021-03-05 11:48:41 V/Net 1537133819: Recv: StatSvc.GetDevLoginInfo.Response(deviceList.size=1)[0m
+[0m2021-03-05 11:48:42 V/Net 1537133819: Recv: StrangerList.GetStrangerList.Response(result=0)[0m
+[92m2021-03-05 11:48:42 I/Net 1537133819: Successfully loaded stranger list: 0 in total[0m
+[92m2021-03-05 11:48:42 I/Net 1537133819: Syncing friend message history: Success.[0m
+[0m2021-03-05 11:48:42 V/Net 1537133819: Recv: TroopManagement.GetTroopConfig.Response(true)[0m
+[92m2021-03-05 11:48:42 I/Net 1537133819: Start loading group list...[0m
+[0m2021-03-05 11:48:42 V/Net 1537133819: Send: friendlist.GetTroopListReqV2[0m
+[0m2021-03-05 11:48:42 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-03-05 11:48:42 V/Net 1537133819: Loading friend list: 3/3[0m
+[92m2021-03-05 11:48:42 I/Net 1537133819: Successfully loaded friend list: 3 in total[0m
+[0m2021-03-05 11:48:42 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-03-05 11:48:42 V/Net 1537133819: Send: friendlist.GetTroopMemberListReq[0m
+[0m2021-03-05 11:48:42 V/Net 1537133819: Recv: FriendList.GetTroopMemberList.Response[0m
+[92m2021-03-05 11:48:42 I/Net 1537133819: Successfully loaded group list: 1 in total.[0m
+[96m2021-03-05 11:48:44 D/Net 1537133819: Received unknown commandName: ConfigPushSvc.PushDomain[0m
+[0m2021-03-05 11:48:44 V/Net 1537133819: Recv: ConfigPushSvc.PushReq.PushReqResponse.ConfigPush[0m
+[0m2021-03-05 11:48:44 V/Net 1537133819: Saving bdh session to cache[0m
+[0m2021-03-05 11:48:44 V/Net 1537133819: Send: ConfigPushSvc.PushResp[0m
+[92m2021-03-05 11:48:44 I/Net 1537133819: ConfigPushSvc.PushReq: Config updated.[0m
+[0m2021-03-05 11:48:52 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-05 11:48:52 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m
+[0m2021-03-05 11:49:03 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-05 11:49:03 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m
+[0m2021-03-05 11:49:17 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-05 11:49:17 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m
+[0m2021-03-05 11:52:04 V/Net 1537133819: Loading BdhSession from cache file[0m
+[0m2021-03-05 11:52:04 V/Net 1537133819: Loading server list from cache.[0m
+[92m2021-03-05 11:52:04 I/Net 1537133819: Connected to server 36.155.229.198:80[0m
+[0m2021-03-05 11:52:04 V/Net 1537133819: Send: wtlogin.login[0m
+[0m2021-03-05 11:52:05 V/Net 1537133819: Recv: LoginPacketResponse.Success[0m
+[92m2021-03-05 11:52:05 I/Net 1537133819: Login successful[0m
+[0m2021-03-05 11:52:05 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-03-05 11:52:05 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[92m2021-03-05 11:52:05 I/Net 1537133819: Scheduled key refresh in 5h 55min 0.0s.[0m
+[0m2021-03-05 11:52:05 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-03-05 11:52:05 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[92m2021-03-05 11:52:05 I/Net 1537133819: Awaiting ConfigPushSvc.PushReq.[0m
+[92m2021-03-05 11:52:05 I/Net 1537133819: Syncing friend message history...[0m
+[92m2021-03-05 11:52:05 I/Net 1537133819: Start loading stranger list...[0m
+[92m2021-03-05 11:52:05 I/Net 1537133819: Start loading friend list...[0m
+[0m2021-03-05 11:52:05 V/Net 1537133819: Send: MessageSvc.PbGetMsg[0m
+[0m2021-03-05 11:52:05 V/Net 1537133819: Send: StatSvc.GetDevLoginInfo[0m
+[0m2021-03-05 11:52:05 V/Net 1537133819: Send: OidbSvc.0x496[0m
+[0m2021-03-05 11:52:05 V/Net 1537133819: Send: OidbSvc.0x5d2_0[0m
+[0m2021-03-05 11:52:05 V/Net 1537133819: Send: friendlist.getFriendGroupList[0m
+[0m2021-03-05 11:52:05 V/Net 1537133819: Recv: StrangerList.GetStrangerList.Response(result=0)[0m
+[92m2021-03-05 11:52:05 I/Net 1537133819: Successfully loaded stranger list: 0 in total[0m
+[0m2021-03-05 11:52:05 V/Net 1537133819: Recv: StatSvc.GetDevLoginInfo.Response(deviceList.size=1)[0m
+[92m2021-03-05 11:52:05 I/Net 1537133819: Syncing friend message history: Success.[0m
+[0m2021-03-05 11:52:05 V/Net 1537133819: Recv: TroopManagement.GetTroopConfig.Response(true)[0m
+[92m2021-03-05 11:52:05 I/Net 1537133819: Start loading group list...[0m
+[0m2021-03-05 11:52:05 V/Net 1537133819: Send: friendlist.GetTroopListReqV2[0m
+[0m2021-03-05 11:52:05 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-03-05 11:52:05 V/Net 1537133819: Loading friend list: 3/3[0m
+[92m2021-03-05 11:52:05 I/Net 1537133819: Successfully loaded friend list: 3 in total[0m
+[0m2021-03-05 11:52:05 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-03-05 11:52:05 V/Net 1537133819: Send: friendlist.GetTroopMemberListReq[0m
+[0m2021-03-05 11:52:05 V/Net 1537133819: Recv: FriendList.GetTroopMemberList.Response[0m
+[92m2021-03-05 11:52:05 I/Net 1537133819: Successfully loaded group list: 1 in total.[0m
+[96m2021-03-05 11:52:08 D/Net 1537133819: Received unknown commandName: ConfigPushSvc.PushDomain[0m
+[0m2021-03-05 11:52:08 V/Net 1537133819: Recv: ConfigPushSvc.PushReq.PushReqResponse.ConfigPush[0m
+[0m2021-03-05 11:52:08 V/Net 1537133819: Saving bdh session to cache[0m
+[0m2021-03-05 11:52:08 V/Net 1537133819: Send: ConfigPushSvc.PushResp[0m
+[92m2021-03-05 11:52:08 I/Net 1537133819: ConfigPushSvc.PushReq: Config updated.[0m
+[0m2021-03-05 11:52:21 V/Net 1537133819: Send: MessageSvc.PbSendMsg[0m
+[0m2021-03-05 11:52:21 V/Net 1537133819: Recv: MessageSvcPbSendMsg.Response.SUCCESS[0m

@@ -8,18 +8,12 @@ import net.mamoe.mirai.Bot
 import net.mamoe.mirai.message.data.Image
 import net.mamoe.mirai.message.data.MessageChain
 import net.mamoe.mirai.message.data.buildMessageChain
-import net.mamoe.mirai.utils.ExternalResource.Companion.toExternalResource
 import top.colter.mirai.plugin.bean.Dynamic
 import top.colter.mirai.plugin.bean.User
 import top.colter.mirai.plugin.utils.buildMessageImage
-import top.colter.mirai.plugin.utils.httpGet
 import java.lang.Exception
 import java.net.URL
 import javax.imageio.ImageIO
-
-import java.io.ByteArrayInputStream
-import java.io.ByteArrayOutputStream
-import java.io.File
 
 /**
  * 解析动态 发送动态
@@ -36,7 +30,12 @@ suspend fun sendDynamic(bot: Bot, rawDynamic: JSONObject, user: User){
         dynamic.type = desc.getInteger("type")
         dynamic.contentJson = JSON.parseObject(rawDynamic.getString("card"))
         dynamic.uid = user.uid
-        dynamic.display = rawDynamic.getJSONObject("display")
+        try{
+            dynamic.display = rawDynamic.getJSONObject("display")
+        }catch (e:Exception){
+
+        }
+
 
         // 格式化动态信息
         dynamicFormat(dynamic)
@@ -46,7 +45,7 @@ suspend fun sendDynamic(bot: Bot, rawDynamic: JSONObject, user: User){
         sendMessage(bot, user.uid, resMag)
 
     }catch (e : Exception){
-        PluginMain.logger.error("检测 " + user.name + "的动态失败!")
+        PluginMain.logger.error("发送 " + user.name + "的动态失败!")
     }
 }
 
@@ -127,6 +126,13 @@ fun dynamicFormat(dynamic: Dynamic){
             dynamic.pictures?.add(card.getString("pic"))
         }
 
+        256 -> {
+            val card = dynamic.contentJson
+            content = "音频: ${card.getString("title")}\n${card.getString("intro")}"
+            dynamic.pictures = mutableListOf()
+            dynamic.pictures?.add(card.getString("cover"))
+        }
+
         else -> {
             content = "不支持此类型动态"
         }
@@ -151,22 +157,17 @@ fun putEmoji(emojiJson: JSONArray){
  * 构建发送消息链
  */
 suspend fun buildResMessage(bot: Bot, dynamic: Dynamic, user: User): MessageChain {
-    // 消息图片
-    val resImg = File(buildMessageImage(dynamic,user)).toExternalResource()
     // 消息链接
-    val link = if (dynamic.isDynamic){
+    val link = if (dynamic.isDynamic) {
         "https://t.bilibili.com/${dynamic.did}"
-    }else{
+    } else {
         "https://live.bilibili.com/${user.liveRoom}"
     }
-
     // 消息链
-    val chain = buildMessageChain {
-        +Image(""+bot.getGroup(PluginConfig.adminGroup)?.uploadImage(resImg)?.imageId)
+    return buildMessageChain {
+        +Image("" + buildMessageImage(dynamic, user))
         +link
     }
-    resImg.close()
-    return chain
 }
 
 /**

@@ -1,37 +1,21 @@
 plugins {
-    val kotlinVersion = "1.4.21"
+    val kotlinVersion = "1.4.31"
     kotlin("jvm") version kotlinVersion
     kotlin("plugin.serialization") version kotlinVersion
-    id("net.mamoe.mirai-console") version "2.0-RC" // mirai-console version
-}
 
-//application {
-//    mainClassName="BotMain"
-//}
-
-mirai {
-    coreVersion = "2.0-RC" // mirai-core version
+    id("net.mamoe.mirai-console") version "2.5.0"
 }
 
 group = "top.colter"
-version = "0.1.0"
+version = "1.0.0"
 
 repositories {
     mavenLocal()
+    maven("https://maven.aliyun.com/repository/public") // 阿里云国内代理仓库
     mavenCentral()
     jcenter()
-    maven("https://dl.bintray.com/kotlin/kotlin-eap")
 }
-
 dependencies {
-//    implementation("net.mamoe:mirai-console-terminal:2.0-RC") // 自行替换版本
-//    implementation("net.mamoe:mirai-core:2.0-RC")
-//    implementation("net.mamoe:mirai-console:2.0-RC")
-//    runtimeOnly("net.mamoe:mirai-login-solver-selenium:1.0-dev-15")
-    implementation("com.alibaba:fastjson:1.2.74")
+    implementation("com.alibaba:fastjson:1.2.75")
+//    implementation("org.seleniumhq.selenium:selenium-java:3.141.59")
 }
-
-//val compileKotlin: org.jetbrains.kotlin.gradle.tasks.KotlinCompile by tasks
-//compileKotlin.kotlinOptions {
-//    jvmTarget = "1.8"
-//}

@@ -10,9 +10,6 @@ object PluginData : AutoSavePluginData("pluginData"){
 
     var summaryDate by value("")
 
-    // 动态计数
-    var dynamicCount : Int by value(0)
-
     var followList : MutableList<String> by value()
 
     var groupList : MutableList<Long> by value()

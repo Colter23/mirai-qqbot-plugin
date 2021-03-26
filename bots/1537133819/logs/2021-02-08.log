@@ -1,0 +1,74 @@
+[92m2021-02-08 21:53:22 I/Net 1537133819: Connected to server 42.81.172.207:443[0m
+[0m2021-02-08 21:53:22 V/Net 1537133819: Send: wtlogin.login[0m
+[0m2021-02-08 21:53:23 V/Net 1537133819: Recv: LoginPacketResponse.Success[0m
+[92m2021-02-08 21:53:23 I/Net 1537133819: Login successful[0m
+[0m2021-02-08 21:53:23 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-02-08 21:53:23 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[0m2021-02-08 21:53:23 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-02-08 21:53:23 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[0m2021-02-08 21:53:23 V/Net 1537133819: Send: StatSvc.GetDevLoginInfo[0m
+[0m2021-02-08 21:53:23 V/Net 1537133819: Recv: StatSvc.GetDevLoginInfo.Response(deviceList.size=1)[0m
+[92m2021-02-08 21:53:23 I/Net 1537133819: Start loading friend list...[0m
+[92m2021-02-08 21:53:23 I/Net 1537133819: Start loading stranger list...[0m
+[92m2021-02-08 21:53:23 I/Net 1537133819: Start syncing group config...[0m
+[92m2021-02-08 21:53:23 I/Net 1537133819: Scheduled key refresh in 5h 55min 0.0s.[0m
+[0m2021-02-08 21:53:23 V/Net 1537133819: Send: OidbSvc.0x496[0m
+[0m2021-02-08 21:53:23 V/Net 1537133819: Send: friendlist.getFriendGroupList[0m
+[0m2021-02-08 21:53:23 V/Net 1537133819: Send: OidbSvc.0x5d2_0[0m
+[0m2021-02-08 21:53:23 V/Net 1537133819: Recv: TroopManagement.GetTroopConfig.Response(true)[0m
+[92m2021-02-08 21:53:23 I/Net 1537133819: Successfully synced group config.[0m
+[92m2021-02-08 21:53:23 I/Net 1537133819: Start loading group list...[0m
+[0m2021-02-08 21:53:23 V/Net 1537133819: Send: friendlist.GetTroopListReqV2[0m
+[0m2021-02-08 21:53:23 V/Net 1537133819: Recv: StrangerList.GetStrangerList.Response(result=0)[0m
+[92m2021-02-08 21:53:23 I/Net 1537133819: Successfully loaded stranger list: 0 in total[0m
+[0m2021-02-08 21:53:23 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-02-08 21:53:23 V/Net 1537133819: Recv: FriendList.GetFriendGroupList.Response[0m
+[0m2021-02-08 21:53:23 V/Net 1537133819: Loading friend list: 3/3[0m
+[0m2021-02-08 21:53:23 V/Net 1537133819: Send: friendlist.GetTroopMemberListReq[0m
+[92m2021-02-08 21:53:23 I/Net 1537133819: Successfully loaded friend list: 3 in total[0m
+[0m2021-02-08 21:53:23 V/Net 1537133819: Recv: FriendList.GetTroopMemberList.Response[0m
+[92m2021-02-08 21:53:23 I/Net 1537133819: Successfully loaded group list: 1 in total.[0m
+[92m2021-02-08 21:53:23 I/Net 1537133819: Syncing friend message history...[0m
+[92m2021-02-08 21:53:23 I/Net 1537133819: Awaiting ConfigPushSvc.PushReq.[0m
+[0m2021-02-08 21:53:23 V/Net 1537133819: Send: MessageSvc.PbGetMsg[0m
+[92m2021-02-08 21:53:23 I/Net 1537133819: Syncing friend message history: Success.[0m
+[0m2021-02-08 21:53:26 V/Net 1537133819: Recv: ConfigPushSvc.PushReq.PushReqResponse.ChangeServer[0m
+[0m2021-02-08 21:53:26 V/Net 1537133819: Channel closed.[0m
+[92m2021-02-08 21:53:26 I/Net 1537133819: Connected to server 111.30.178.193:14000[0m
+[0m2021-02-08 21:53:26 V/Net 1537133819: Send: wtlogin.login[0m
+[0m2021-02-08 21:53:26 V/Net 1537133819: Recv: LoginPacketResponse.Success[0m
+[92m2021-02-08 21:53:26 I/Net 1537133819: Login successful[0m
+[0m2021-02-08 21:53:26 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-02-08 21:53:26 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[0m2021-02-08 21:53:26 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-02-08 21:53:26 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[0m2021-02-08 21:53:26 V/Net 1537133819: Send: StatSvc.GetDevLoginInfo[0m
+[0m2021-02-08 21:53:26 V/Net 1537133819: Recv: StatSvc.GetDevLoginInfo.Response(deviceList.size=0)[0m
+[92m2021-02-08 21:53:26 I/Net 1537133819: Scheduled key refresh in 5h 55min 0.0s.[0m
+[92m2021-02-08 21:53:26 I/Net 1537133819: Syncing friend message history...[0m
+[0m2021-02-08 21:53:26 V/Net 1537133819: Send: MessageSvc.PbGetMsg[0m
+[92m2021-02-08 21:53:26 I/Net 1537133819: Syncing friend message history: Success.[0m
+[96m2021-02-08 21:53:29 D/Net 1537133819: Received unknown commandName: ConfigPushSvc.PushDomain[0m
+[0m2021-02-08 21:53:29 V/Net 1537133819: Recv: ConfigPushSvc.PushReq.PushReqResponse.Success[0m
+[0m2021-02-08 21:53:29 V/Net 1537133819: Send: ConfigPushSvc.PushResp[0m
+[0m2021-02-08 21:57:56 V/Net 1537133819: Send: Heartbeat.Alive[0m
+[0m2021-02-08 21:58:01 V/Net 1537133819: Send: Heartbeat.Alive[0m
+[0m2021-02-08 21:58:11 V/Net 1537133819: Channel closed.[0m
+[92m2021-02-08 21:58:11 I/Net 1537133819: Connected to server 36.155.249.120:14000[0m
+[0m2021-02-08 21:58:11 V/Net 1537133819: Send: wtlogin.login[0m
+[0m2021-02-08 21:58:12 V/Net 1537133819: Recv: LoginPacketResponse.Success[0m
+[92m2021-02-08 21:58:12 I/Net 1537133819: Login successful[0m
+[0m2021-02-08 21:58:12 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-02-08 21:58:12 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[0m2021-02-08 21:58:12 V/Net 1537133819: Send: StatSvc.register[0m
+[0m2021-02-08 21:58:12 V/Net 1537133819: Recv: Response(StatSvc.register)[0m
+[0m2021-02-08 21:58:12 V/Net 1537133819: Send: StatSvc.GetDevLoginInfo[0m
+[0m2021-02-08 21:58:12 V/Net 1537133819: Recv: StatSvc.GetDevLoginInfo.Response(deviceList.size=0)[0m
+[92m2021-02-08 21:58:12 I/Net 1537133819: Scheduled key refresh in 5h 55min 0.0s.[0m
+[92m2021-02-08 21:58:12 I/Net 1537133819: Syncing friend message history...[0m
+[0m2021-02-08 21:58:12 V/Net 1537133819: Send: MessageSvc.PbGetMsg[0m
+[92m2021-02-08 21:58:12 I/Net 1537133819: Syncing friend message history: Success.[0m
+[0m2021-02-08 21:58:15 V/Net 1537133819: Recv: ConfigPushSvc.PushReq.PushReqResponse.ChangeServer[0m
+[96m2021-02-08 21:58:15 D/Net 1537133819: Received unknown commandName: ConfigPushSvc.PushDomain[0m
+[0m2021-02-08 21:58:15 V/Net 1537133819: Recv: ConfigPushSvc.PushReq.PushReqResponse.Success[0m
+[0m2021-02-08 21:58:15 V/Net 1537133819: Send: ConfigPushSvc.PushResp[0m

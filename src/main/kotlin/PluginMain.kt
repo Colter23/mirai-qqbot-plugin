@@ -11,6 +11,7 @@ import net.mamoe.mirai.message.data.*
 import net.mamoe.mirai.utils.BotConfiguration
 import net.mamoe.mirai.utils.info
 import java.lang.Exception
+import java.text.SimpleDateFormat
 
 object PluginMain : KotlinPlugin(
     JvmPluginDescription(
@@ -26,10 +27,12 @@ object PluginMain : KotlinPlugin(
     // b站表情
     val emojiMap = mutableMapOf<String,java.awt.Image>()
 
-    var ys = mutableMapOf<Long,Int>()
+    var ys = mutableMapOf<String,Int>()
 
     var goodWorkCount = 0
     var tempTime : Long = 0
+
+    lateinit var bot : Bot
 
     override fun onEnable() {
         logger.info { "Plugin loaded" }
@@ -44,10 +47,10 @@ object PluginMain : KotlinPlugin(
 
         PluginMain.launch {
             logger.info("forward......")
-            //检测动态更新 并发送给群
 
-            delay(6000)
-            lateinit var bot : Bot
+            init()
+            delay(2000)
+
             Bot.instances.forEach { b: Bot ->
                 bot = b
             }
@@ -56,10 +59,28 @@ object PluginMain : KotlinPlugin(
             bot.eventChannel.registerListenerHost(GroupListener)
             bot.eventChannel.registerListenerHost(FriendListener)
             bot.eventChannel.registerListenerHost(MessageListener)
-            check(bot)
+
+            if (PluginConfig.dynamic["enable"]=="true"||PluginConfig.live["enable"]=="true") {
+                check(bot)
+            }
 
         }
+//        PluginMain.launch {
+//
+//            while (true){
+//                val timestamp = System.currentTimeMillis()
+//                val time = SimpleDateFormat("HHmmss").format(timestamp)
+//                if (time=="000000"){
+//                    for (group in PluginData.groupList){
+//                        bot.getGroup(group)?.sendMessage("新年快乐o(≧口≦)o")
+//                    }
+//                }
+//                delay(500)
+//            }
+//        }
+    }
 
+    override fun onDisable() {
 
     }
 }

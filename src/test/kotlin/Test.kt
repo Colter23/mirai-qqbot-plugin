@@ -21,7 +21,7 @@ fun main() {
     var w5 = 0
     var w4 = 0
     var w3 = 0
-    for (s in 1..10){
+//    for (s in 1..10){
 
 //        val random = (1..100).random()
 //        if (random in 1..3){ // 1  2  3  -> 3%
@@ -36,38 +36,42 @@ fun main() {
 //            w3++
 //        }
 
-        val random = (1..1000).random()
-        if (random in 1..30){ // 30
-            r5++
-        }else if (random in 31..60){  //  30
-            w5++
-        }else if (random in 61..160){  // 100
-            r4++
-        }else if (random in 161..260){ // 100
-            w4++
-        }else if (random in 261..1000){ // 75%
-            w3++
+//        val random = (1..1000).random()
+//        if (random in 1..30){ // 30
+//            r5++
+//        }else if (random in 31..60){  //  30
+//            w5++
+//        }else if (random in 61..160){  // 100
+//            r4++
+//        }else if (random in 161..260){ // 100
+//            w4++
+//        }else if (random in 261..1000){ // 75%
+//            w3++
+//        }
+//
+////        print()
+////        print("  ")
+////        if (s%40==0) print("\n")
+//    }
+//    val rw = mapOf<String,Int>("r5" to r5, "w5" to w5, "r4" to r4, "w4" to w4, "w3" to w3)
+//    val rwCount = mapOf<String,Int>("r5" to (原神人物[5]?.size ?: 0), "w5" to (原神武器[5]?.size ?: 0), "r4" to (原神人物[4]?.size ?: 0), "w4" to (原神武器[4]?.size ?: 0), "w3" to (原神武器[3]?.size ?: 0))
+//    val list = mutableListOf<String>()
+//    rw.forEach { (t, u) ->
+//        for (i in 1..u){
+//            list.add(t+"-"+(1..rwCount[t]!!).random())
+//        }
+//    }
+//    println(list)
+//
+//    println("⭐⭐⭐⭐⭐人物：$r5")
+//    println("⭐⭐⭐⭐⭐武器：$w5")
+//    println("⭐⭐⭐⭐人物：$r4")
+//    println("⭐⭐⭐⭐武器：$w4")
+//    println("⭐⭐⭐武器：$w3")
+    for (i in 1..10000){
+        if ((1..100).random()==100){
+            println(i)
         }
-
-//        print()
-//        print("  ")
-//        if (s%40==0) print("\n")
     }
-    val rw = mapOf<String,Int>("r5" to r5, "w5" to w5, "r4" to r4, "w4" to w4, "w3" to w3)
-    val rwCount = mapOf<String,Int>("r5" to (原神人物[5]?.size ?: 0), "w5" to (原神武器[5]?.size ?: 0), "r4" to (原神人物[4]?.size ?: 0), "w4" to (原神武器[4]?.size ?: 0), "w3" to (原神武器[3]?.size ?: 0))
-    val list = mutableListOf<String>()
-    rw.forEach { (t, u) ->
-        for (i in 1..u){
-            list.add(t+"-"+(1..rwCount[t]!!).random())
-        }
-    }
-    println(list)
-
-    println("⭐⭐⭐⭐⭐人物：$r5")
-    println("⭐⭐⭐⭐⭐武器：$w5")
-    println("⭐⭐⭐⭐人物：$r4")
-    println("⭐⭐⭐⭐武器：$w4")
-    println("⭐⭐⭐武器：$w3")
-
 
 }

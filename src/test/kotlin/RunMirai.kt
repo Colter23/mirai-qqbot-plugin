@@ -16,7 +16,7 @@ suspend fun main() {
     PluginMain.load()
     PluginMain.enable()
 
-    val bot = MiraiConsole.addBot(1537133819, "MC639890508lyc") {
+    val bot = MiraiConsole.addBot(111111111, "222222222222") {
         fileBasedDeviceInfo()
         protocol = BotConfiguration.MiraiProtocol.ANDROID_PAD
     }.alsoLogin()
